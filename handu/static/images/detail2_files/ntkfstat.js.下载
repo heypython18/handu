@@ -1,0 +1,156 @@
+﻿/**
+ * 小能5.0集成方式加载5.0或6.0脚本实现
+ * 此文件会获取siteid参数，然后判断加载5或6，然后重新执行正常加载
+ * @param  {[type]} window    [description]
+ */
+(function(window){
+	var 
+		/**
+		 * 需要继续使用5.0脚本的网站siteId添加到下面配置中
+		 * 否则会跳转至：http://dl.ntalker.com/js/xn6/ntkfstat.js?siteid=$siteid&lan=$lang
+		 * @property CON_V5_SITEIDS
+		 * @type {array}
+		 */
+		CON_V5_SITEIDS = ['kf_9986','bq_1000'],
+		/**
+		 * 加载小能6.0脚本服务器地址
+		 * @property CON_V5_URL
+		 * @type {array}
+		 */
+		CON_V5_URL = 'http://dl.ntalker.com/js/xn6/',
+		//CON_V5_URL = 'http://192.168.1.119/xn6/',
+		//-------------------------------------------------------------
+		headElement,
+		node,
+		scripturl,
+		XNform,
+		scriptname,
+		script,
+		funcDebug = function(message){
+			if( typeof console !== undefined ){
+				return;
+			}
+			if( typeof console.error !== undefined ){
+				console.error(message);
+			}
+			if( typeof console.info !== undefined ){
+				console.info(message);
+			}
+		},
+		funcRemoveNode = function(element){
+			var removeComplete = false;
+			
+			for(var methodName in element){
+				try{
+					if( typeof element[methodName] == 'function' ){
+						element[methodName] = null;
+					}
+					//for 网站动态加载脚本时，会执行移除此script操作，
+					if( methodName == 'src' ) {
+						element.setAttribute(methodName, '');
+					}
+				}catch(e){
+					funcDebug('clear element function');
+				}
+			}
+		},
+		funcInArray = function(value, array){
+			if ( array.length === undefined ){
+				for ( var name in array ){
+					if(array[name] == value) return name;
+				}
+			} else {
+				for ( var i = 0, len = array.length; i < len; i++ ) {
+					if(array[i] == value) return i;
+				}
+			}
+			return -1;
+		},
+		funcURIToJSON = function(str){
+			var target = {}, atmp = str.toString().split('&');
+			for(var arg, i = 0; i < atmp.length; i++){
+				arg = atmp[ i ].split('=');
+				if( arg.length < 2 ) continue;
+				try{
+					target[ arg[0] ] = decodeURIComponent( arg[1] || '' );
+				}catch(e){
+					target[ arg[0] ] = arg[1];
+				}
+			}
+			return target;
+		}
+	;
+
+	script = document.getElementsByTagName('script');
+	for(var i = 0; i < script.length; i++){
+		if( script[i].src && /(ntkfstat|ntkfstat2|ntkf_core|ntkfstat_en_us|ntkf_core_en_us|ntkf)\.js/gi.test(script[i].src) ){
+			scripturl = script[i].src.substr(0, script[i].src.lastIndexOf("/") + 1);
+			scriptname= script[i].src.replace(/^.*?((ntkfstat|ntkfstat2|ntkf_core|ntkfstat_en_us|ntkf_core_en_us|ntkf)\.js).*?$/gi, "$1");
+			
+			//getQueryString
+			var queryString,jsonQuery;
+			queryString = script[i].src.replace(/^(.*?)((\?)(.*?))?$/gi, "$4");
+			if( queryString ){
+				jsonQuery = funcURIToJSON(queryString);
+				if( typeof NTKF_PARAM == 'undefined' ){
+					NTKF_PARAM = {};
+				}
+				if( jsonQuery.siteid ){
+					NTKF_PARAM.siteid = jsonQuery.siteid;
+				}
+				if( jsonQuery.settingid ){
+					NTKF_PARAM.settingid = jsonQuery.settingid;
+				}
+			}
+			
+			if( script[i].removeAttribute ){
+				script[i].removeAttribute('src');
+			}else{
+				script[i].setAttribute('src', '');
+			}
+			script[i].src = '';
+			break;
+		}
+	}
+	
+	if( typeof NTKF_PARAM === 'undefined' ){
+		funcDebug('ERROR: NTKF_PARAM is not defined');
+		return false;
+	}
+
+	if( !NTKF_PARAM.siteid ){
+		funcDebug('ERROR: NTKF_PARAM.siteid is not defined');
+		return false;
+	}
+	
+	if( funcInArray(NTKF_PARAM.siteid, CON_V5_SITEIDS) == -1 ){
+		//6.0
+		XNform = scripturl.replace(/^https?:\/\/(.*?)\//gi, '').replace(/\//gi, '');
+		scripturl = CON_V5_URL + 'ntkfstat.js?siteid=' + NTKF_PARAM.siteid + (scriptname.indexOf('en_us') > -1 ? '&lan=en_us' : '') + '&XNform=' + XNform;
+	}else{
+		//5.0, 当前目录脚本
+		scripturl = scripturl + scriptname.replace(/\.js$/gi, '5.js') + '?siteid=' + NTKF_PARAM.siteid;
+	}
+	if( !scripturl ){
+		funcDebug('ERROR: script server url get failure.');
+		return false;
+	}else{
+		funcDebug('LOG: ' + scripturl);
+	}
+	headElement	= document.getElementsByTagName('head')[0];
+	node		= document.createElement('script');
+	node.type	= 'text/javascript';
+	node.async	= 'async';
+	node.charset= "utf-8";
+	node.src	= scripturl;
+	var script = document.getElementsByTagName("script")[0];
+	try{
+		headElement.insertBefore(node, script);
+	}catch(e){
+		try{
+			headElement.insertBefore(node);
+		}catch(e1){
+			headElement.appendChild(node);
+		}
+	}
+})(window);

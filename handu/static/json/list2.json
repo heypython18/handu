@@ -1,0 +1,38 @@
+[
+	{	
+		"id": 1001,
+		"price" : "￥106",
+		"unit": "￥200.0",
+		"text": "立即抢购",
+		"headImg": "../images/1111.jpg"
+		 
+	},
+	{	
+		"id": 1002,
+		"price" : "￥106",
+		"unit": "￥200.0",
+		"text": "立即抢购",
+		"headImg": "../images/2222.jpg" 
+	},
+	{	
+		"id": 1003,
+		"price" : "￥106",
+		"unit": "￥200.0",
+		"text": "立即抢购",
+		"headImg": "../images/3333.jpg"
+	},
+	{	
+		"id": 1004,
+		"price" : "￥106",
+		"unit": "￥200.0",
+		"text": "立即抢购",
+		"headImg": "../images/4444.jpg"
+	},
+	{	
+		"id": 1005,
+		"price" : "￥106",
+		"unit": "￥200.0",
+		"text": "立即抢购",
+		"headImg": "../images/5555.jpg"
+	}
+]

@@ -1,0 +1,17 @@
+/* CSS Document */
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img { margin:0; padding:0; }
+fieldset, img { border:none; }
+h1,h2,h3,h4,h5,h6{ font-weight:normal;}
+em,i,b,strong{ font-style:normal; font-weight:normal; }
+ul li, ol li { list-style:none; } 
+body { color:#333; font:12px/20px "SimSun","宋体","Arial Narrow",HELVETICA; background:#fff;}
+a { color:#333; text-decoration:none; }
+a:hover { color:#666; }
+
+.ind{text-indent:2em; } 
+
+.noborder{border:0;}
+
+/****/
+.col-red{ color:red;}
+

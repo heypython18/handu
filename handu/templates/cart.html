@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/index/cart.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+		<script src ="../js/jquery-1.12.3.js"></script>
+		<script src ="../js/move.js"></script>
+		<script src="../js/cart.js"></script>
+		<script src="../js/jquery.cookie.js"></script>
+	</head>
+	<body>
+		<div class = "top">
+			<div class ="top-l">
+				<p>返回首页</p>
+				<span>收藏网站</span>
+			</div>
+			<div class="top-r">
+				<p>您好，欢迎光临韩都衣舍！</p>
+				<ul>
+					<li><a href="#">积分0</a></li>
+					<li><a href="#">退出</a></li>
+					<li><a href="#">我的韩都</a><b></b></li>
+					<li><a href="#">购物车</a></li>
+					<li><a href="#">在线客服</a></li>
+					<li><a href="#">帮助中心</a></li>
+					<li>
+						<s></s>
+						<a href="#">网站导航</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="main">
+			<div class="head">
+				<div class="head-l">
+					<div class="cartlogo">
+						<a href="#">韩都衣舍</a>
+					</div>
+					<div class="cartbg"><i>温馨提示</i>：购物车中商品无法保留库存，请您及时下单结算</div>
+				</div>
+				<div class="head-r"></div>
+			</div>
+			<div class="nav">
+				<ul>
+					<li>商品名称</li>
+					<li>售价</li>
+					<li>数量</li>
+					<li>小计</li>
+					<li>操作</li>
+					<li>备注</li>
+				</ul>
+			</div>
+			<div class="banner">
+				<p>品牌：</p>
+			    <div class="bannertxt">
+			    	<b></b>
+			    	<span>活动商品购满199.00元，即可享受满减优惠</span>
+			    </div>
+			</div>
+			<div class="cartlist">
+				<ul id="list">
+					<!--<li>
+						<div class="product">
+							<div class="productimg">
+								<img src="../images/HN1.jpg" />
+							</div>
+							<p><a href="#">韩都衣舍男装2017秋季新款韩版水洗九分牛仔裤男士AF7785渪偞0901</a></p>
+							<span>颜色:蓝色    尺码:L</span>
+						</div>
+						<div class="product-money">
+							<div class="product-m">
+								<dis>￥654</dis><br />
+								<span>￥128</span>
+							</div>
+						</div>
+						<div class="product-number">
+							<input class="reduce" type="button" value="-"/>
+							<input class="carttxt" type="button" value="1" />
+							<input class="add" type="button" value="+" />
+ 							
+						</div>
+						<div class="product-singlemoney">
+							<span>￥450.00</span>
+						</div>
+						<div class="product-close">
+							<div class="product-closemid">
+								<a href="#">移入收藏夹</a><br />
+								<a href="#" class="del">删除</a>
+							</div>
+						</div>
+						<div class="product-tip">
+							<a href="#">2017秋冬新品-全场满199包邮【提交订单系统自动满减】满199减20/满299减50/满499减150！~</a>
+						</div>
+					</li>-->
+				</ul>
+			</div>
+			<div class="total">
+				<table>
+					<tr>
+						<td>总计：</td>
+						<td class="totalval">0</td>
+					</tr>
+					<tr>
+						<td>满立减：</td>
+						<td>￥-150.00</td>
+					</tr>
+					<tr>
+						<td>税额：</td>
+						<td>￥-0.00</td>
+					</tr>
+				</table>
+			</div>
+			<div class="total2">
+				<div class="total2-r">
+					<span>购物金额总计:</span><i>￥0</i>
+				</div>
+			</div>
+			<div class="goshopping">
+				<input class="goshopping-l" type="button" value="继续购物"/>
+				<input class="goshopping-r" type="button" value="去结算"/>
+			</div>
+			<div class="collect">
+				<p>韩都官网为你推荐</p>
+				<div class="collect-r">
+					<ul>
+						<li class="collect-active">最近浏览过的商品</li>
+						<li>最近收藏的</li>
+					</ul>
+				</div>
+			</div>
+			<div class="guide">
+					<div class="guide1">
+						<p></p>
+						<ul>
+							<li><a href="#">用户注册</a></li>
+							<li><a href="#">购物流程</a></li>
+							<li><a href="#">网站导航</a></li>
+							<li><a href="#">帮助中心</a></li>
+					    </ul>
+				    </div>
+				    <div class="guide1">
+						<p></p>
+						<ul>
+							<li><a href="#">在线支付</a></li>
+							<li><a href="#">扫码支付</a></a></li>
+							<li><a href="#">优惠券支付</a></li>
+					    </ul>
+				    </div>
+				    <div class="guide1">
+						<p></p>
+						<ul>
+							<li><a href="#">配送说明</a></a></li>
+							<li><a href="#">运费说明</a></a></li>
+							<li><a href="#">验货签收</a></li>
+					    </ul>
+				    </div>
+				    <div class="guide1">
+						<p></p>
+						<ul>
+							<li><a href="#">退换货政策</a></li>
+							<li><a href="#">退换货流程</a></li>
+					    </ul>
+				    </div>
+				    <div class="guide1">
+						<p></p>
+						<ul>
+							<li><a href="#">会员制度</a></li>
+							<li><a href="#">会员积分</a></li>
+					    </ul>
+				    </div>
+				     <div class="guide1">
+						<p></p>
+						<ul>
+							<li><a href="#">品牌故事</a></li>
+							<li><a href="#">媒体报道</a></li>
+							<li><a href="#">诚聘英才</a></li>
+							<li><a href="#">练习我们</a></li>
+					    </ul>
+				    </div>
+				</div>
+				<div class="footimg">
+					<img src="../images/icon4.png" />
+				</div>
+				<div class="foot">
+					<ul>
+						<li><a href="#">首页</a></li>
+						<li><a href="#">品牌故事</a></li>
+						<li><a href="#">诚聘英才</a></li>
+						<li><a href="#">媒体报道</a></li>
+						<li><a href="#">联系我们</a></li>
+						<li><a href="#">网站地图</a></li>
+						<li><a href="#">友情链接</a></li>
+					</ul>
+				</div>
+		</div>
+	</body>
+</html>
