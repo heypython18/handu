@@ -1,20 +1,24 @@
 //轮播图获取json数据
 $(function(){
-	var arr = [];
-		//获取数据并创建节点
-		$.get("../json/lunbo.json", function(data){
-			console.log(data);
-			arr = data;
-			
-			//遍历json，并用节点显示
-			for (var i=0; i<arr.length; i++) {
-				var obj = arr[i];
-				var li = $("<li></li>").appendTo("#piclist");
-			    $("<a href='#'><img src="+obj.headImg+"></a>").appendTo(li);
-		    }
-		})
+	var swiper = new Swiper('.swiper-container', {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
 })
 //轮播图效果
+
 window.onload=function(){
 	var bannerpic = document.getElementById("bannerpic");
 	var piclist = document.getElementById("piclist");
@@ -22,25 +26,25 @@ window.onload=function(){
 	var numlist = document.getElementById("numlist");
 	var aLi2 = numlist.getElementsByTagName("li");
 	var aImg = piclist.getElementsByTagName("img");
-	var index = 0;   
+	var index = 0;
 	var timer = setInterval(function(){
 		index++;
-		move();        
-	},3000);    
+		move();
+	},3000);
 	function move(){
-		if(index >= 4){   
+		if(index >= 4){
 			index = 0;
 		}
 		for(var i = 0; i< aLi1.length; i++){
 			if(i == index){
 				animate(aImg[index],{opacity:100});
 			    aLi2[i].className = "active";
-			}   
+			}
 			else{
-				animate(aImg[i], {opacity:0});     
+				animate(aImg[i], {opacity:0});
 				aLi2[i].className = "";
-			}    
-		}         
+			}
+		}
 	}
 	for(var i = 0; i<aLi2.length; i++){
 		aLi2[i].index = i;
@@ -55,10 +59,10 @@ window.onload=function(){
 		ah3[i].onmouseenter = function(){
 			animate(this,{paddingLeft:25})
 		}
-		ah3[i].onmouseleave = function(){  
+		ah3[i].onmouseleave = function(){
 			animate(this,{paddingLeft:15})
-		}   
-    }        
+		}
+    }
 }
 //  菜单栏显示和隐藏
 	$(function(){

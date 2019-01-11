@@ -1,1015 +1,1034 @@
 {% load static %}
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<title>handu Group</title>
-		<link rel="stylesheet" type="text/css" href="{% static 'css/index/index.css' %}"/>
-		<link rel="stylesheet" type="text/css" href="{% static 'css/reset.css' %}"/>
-		<script src ="{% static 'js/jquery-1.12.3.js' %}"></script>
-		<script src ="{% static 'js/move.js' %}"></script>
-		<script src="{% static 'js/index.js' %}"></script>
-	</head>
-	<body>
+<head>
+    <meta charset="UTF-8">
+    <title>handu Group</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/index/index.css' %}"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/reset.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/index/swiper.min.css' %}">
+    <script src="{% static 'js/jquery-1.12.3.js' %}"></script>
+    <script src="{% static 'js/move.js' %}"></script>
+    <script src="{% static 'js/index.js' %}"></script>
+    <script src="{% static 'js/swiper.min.js' %}"></script>
+</head>
+<body>
 
-		<div class="top">
-			<div class="top-l">
-				<p><a href="#">返回首页</a></p>
-				<span>收藏网站</span>
-			</div>
-			<div class="top-r">
-				<p>您好，欢迎光临韩都衣舍！</p>
-				<ul>
-					<li><a href="lander.html">登陆</a></li>
-					<li><a href="register.html">注册</a></li>
-					<li><a href="#">购物车</a></li>
-					<li><a href="#">在线客服</a></li>
-					<li><a href="#">帮助中心</a></li>
-					<li>
-						<s></s>
-						<a href="#">网站导航</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-		<div class="head">
-			<h1><a href="#">韩都衣舍</a></h1>
-			<div class="head-center">
-				<div class="box">
-				<input type="text" class="txt" placeholder="减龄不做作的时髦Tee">
-				<input type="button" class="btn" value="搜索">
-				</div>
-				<ul>
-					<li><a href="#">韩风女装</a></li>
-					<li><a href="#">可爱童装</a></li>
-					<li><a href="#">简约女装</a></li>
-					<li><a href="#">甜美女装</a></li>
-					<li><a href="#">时尚妈妈</a></li>
-					<li><a href="#">崔范锡系列</a></li>
-				</ul>
-			</div>
-			<div class="head-r">
-				<img src="{% static 'images/ewm.png' %}">
-				<p>韩都衣舍私服搭配</p>
-			</div>
-		</div>
-		<div class="nav">
-			<div class="nav-l">
-				<ul>
-					<li><a href="#">2017新装秋品</a></li>
-					<li><a href="#">团购批发</a></li>
-				</ul>
-			</div>
-			<div class="nav-r">
-				<ul>
-					<li><a href="#">会员俱乐部<i><img src="{% static 'images/sjt.png' %}"></i></a>
-					</li><li><a href="#">韩都资讯<i><img src="{% static 'images/sjt.png' %}"></i></a></li>
-					<li><a href="#">招兵买马</a></li>
-				</ul>
-			</div>
-		</div>
-		<div class="banner">
-			<div id="bannerpic">
-				<ul id="piclist">
-					<!--<li><a href="#"><img src="../images/banner-1.jpg"/></a></li>
-					<li><a href="#"><img src="../images/banner-2.jpg"/></a></li>
-					<li><a href="#"><img src="../images/banner-1.jpg"/></a></li>
-					<li><a href="#"><img src="../images/banner-2.jpg"/></a></li>-->
-				</ul>
-				<ul id="numlist">
-					<li class="active">娜扎lookbook</li>
-					<li>全智贤新品</li>
-					<li>韩都衣舍x香奈儿</li>
-					<li>双节招商</li>
-				</ul>
-			</div>
+<div class="top">
+    <div class="top-l">
+        <p><a href="#">返回首页</a></p>
+        <span>收藏网站</span>
+    </div>
+    <div class="top-r">
+        <p>您好，欢迎光临韩都衣舍！</p>
+        <ul>
+            <li><a href="lander.html">登陆</a></li>
+            <li><a href="register.html">注册</a></li>
+            <li><a href="#">购物车</a></li>
+            <li><a href="#">在线客服</a></li>
+            <li><a href="#">帮助中心</a></li>
+            <li>
+                <s></s>
+                <a href="#">网站导航</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="head">
+    <h1><a href="#">韩都衣舍</a></h1>
+    <div class="head-center">
+        <div class="box">
+            <input type="text" class="txt" placeholder="减龄不做作的时髦Tee">
+            <input type="button" class="btn" value="搜索">
+        </div>
+        <ul>
+            <li><a href="#">韩风女装</a></li>
+            <li><a href="#">可爱童装</a></li>
+            <li><a href="#">简约女装</a></li>
+            <li><a href="#">甜美女装</a></li>
+            <li><a href="#">时尚妈妈</a></li>
+            <li><a href="#">崔范锡系列</a></li>
+        </ul>
+    </div>
+    <div class="head-r">
+        <img src="{% static 'images/ewm.png' %}">
+        <p>韩都衣舍私服搭配</p>
+    </div>
+</div>
+<div class="nav">
+    <div class="nav-l">
+        <ul>
+            <li><a href="#">2017新装秋品</a></li>
+            <li><a href="#">团购批发</a></li>
+        </ul>
+    </div>
+    <div class="nav-r">
+        <ul>
+            <li><a href="#">会员俱乐部<i><img src="{% static 'images/sjt.png' %}"></i></a>
+            </li>
+            <li><a href="#">韩都资讯<i><img src="{% static 'images/sjt.png' %}"></i></a></li>
+            <li><a href="#">招兵买马</a></li>
+        </ul>
+    </div>
+</div>
+<div class="banner">
+    <!-- Swiper -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            {% for foo in headimg %}
+                <div class="swiper-slide"><img src="{{ foo.headimg }}" alt=""></div>
+            {% endfor %}
+
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+
+</div>
 <!--商品分类-->
-			<div class="sort">
-				<p>全部商品分类</p>
-				<ul id="sortlist">
-					<li>
-						<h3>
-						<span><img src="{% static 'images/tb1.png' %}"></span><i>全部商品分类</i>
-						</h3>
-						<a href="#">本周新品</a>
-						<a href="#">按价格</a>
-						<a href="#">按销量</a>
-						<b><img src="{% static 'images/leftjt.png' %}"></b>
-					</li>
-					<li>
-						<h3>
-						<span><img src="{% static 'images/tb2.png' %}"></span><i>精选商品</i>
-						</h3>
-						<a href="#">连衣裙</a>
-						<a href="#">潮流爆款</a>
-						<a href="#">品牌特惠</a>
-						<b><img src="{% static 'images/leftjt.png' %}"></b>
-					</li>
-					<li>
-						<h3>
-						<span><img src="{% static 'images/tb3.png' %}"></span><i>潮流女装</i>
-						</h3>
-						<a href="#">短外套</a>
-						<a href="#">T恤</a>
-						<a href="#">牛仔裤</a>
-						<b><img src="{% static 'images/leftjt.png' %}"></b>
-					</li>
-					<li>
-						<h3>
-						<span><img src="{% static 'images/tb5.png' %}"></span><i>可爱童装</i>
-						</h3>
-						<a href="#">童装新品</a>
-						<a href="#">套装</a>
-						<a href="#">毛衣/针织衫</a>
-						<b><img src="{% static 'images/leftjt.png' %}"></b>
-					</li>
-					<li>
-						<h3>
-						<span><img src="{% static 'images/tb6.png' %}"></span><i>时尚妈妈</i>
-						</h3>
-						<a href="#">T恤</a>
-						<a href="#">针织衫</a>
-						<a href="#">衬衫</a>
-						<b><img src="{% static 'images/leftjt.png' %}"></b>
-					</li>
-					<li>
-						<h3>
-						<span><img src="{% static 'images/w.png' %}"></span><i>韩风男装</i>
-						</h3>
-						<a href="#">上装</a>
-						<a href="#">下装</a>
-						<a href="#">全部商品</a>
-						<b><img src="{% static 'images/leftjt.png' %}"></b>
-					</li>
-					<li>
-						<h3>
-						<span><img src="{% static 'images/tb8.png' %}"></span><i>明星同款</i>
-						</h3>
-						<a href="#">全智贤同款</a>
-						<a href="#">崔范锡系列</a>
-						<b><img src="{% static 'images/leftjt.png' %}"></b>
-					</li>
-				</ul>
-				<ul id="sortlistone">
-					<li class="sortlist1">
-						<div class="aa"><a href="#"><img src="{% static 'images/nana.png' %}"></a></div>
-						<div class="aa"><a href="#"><img src="{% static 'images/ht.png' %}"></a></div>
-						<div class="aa"><a href="#"><img src="{% static 'images/hstyle.png' %}"></a></div>
-						<div class="aa"><a href="#"><img src="{% static 'images/mini.png' %}"></a></div>
-						<div class="aa"><a href="#"><img src="{% static 'images/forqueen.png' %}"></a></div>
-						<div class="aa"><a href="#"><img src="{% static 'images/hp.png' %}"></a></div>
-						<div class="aa"><a href="#"><img src="{% static 'images/hanyunyixiang.png' %}"></a></div>
-						<div class="aa"><a href="#"><img src="{% static 'images/dx1.png' %}"></a></div>
-						<div class="aa"><a href="#"><img src="{% static 'images/nibbuns.png' %}"></a></div>
-						<div class="aa"><a href="#"><img src="{% static 'images/guoya.png' %}"></a></div>
-						<div class="aa"><a href="#"><img src="{% static 'images/sulv.png' %}"></a></div>
-						<div class="aa"><a href="#"><img src="{% static 'images/Hn.png' %}"></a></div>
-						<div class="aa"><a href="#"><img src="{% static 'images/anma.png' %}"></a></div>
-						<div class="aa"><a href="#"><img src="{% static 'images/zg.png' %}"></a></div>
-					</li>
-					<li class="sortlist2">
-						<div class="bb">
-							<h2>特惠精选</h2>
-							<div class="bblist">
-								<a href="#">清仓特惠</a>
-								<a href="#">爆款特惠</a>
-							</div>
-						</div>
-						<div class="bb">
-							<h2>潮流新品</h2>
-							<div class="bblist">
-								<a href="#">2017秋装新品</a>
-								<a href="#">原创新品</a>
-								<a href="#">连衣裙 </a>
-								<a href="#">卫衣</a>
-								<a href="#">毛针织衫 </a>
-							</div>
-						</div>
-						<div class="bb">
-							<h2>类目新品</h2>
-							<div class="bblist">
-								<a href="#">连衣裙</a>
-								<a href="#">牛仔裤</a>
-								<a href="#">衬衫</a>
-								<a href="#">卫衣</a>
-								<a href="#">T恤</a>
-								<a href="#">休闲裤</a>
-								<a href="#">半身裙</a>
-								<a href="#">套装</a>
-								<a href="#">羽绒服</a>
-								<a href="#">毛呢外衣</a>
-								<a href="#">棉衣</a>
-								<a href="#">毛针织衫</a>
-							</div>
-						</div>
-						<div class="bb">
-							<h2>爆款集锦</h2>
-							<div class="bblist">
-								<a href="#">2017秋装爆款</a>
-								<a href="#">女装爆款</a>
-								<a href="#">男装爆款</a>
-								<a href="#">童装爆款</a>
-								<a href="#">妈妈装爆款</a>
-							</div>
-						</div>
-						<div class="bb">
-							<h2>百变风格</h2>
-							<div class="bblist">
-								<a href="#">潮流韩范</a>
-								<a href="#">纯色</a>
-								<a href="#">优雅OL</a>
-								<a href="#">印花</a>
-								<a href="#">甜美清新</a>
-								<a href="#">条纹</a>
-								<a href="#">度假出游</a>
-								<a href="#">拼接</a>
-								<a href="#">复古</a>
-								<a href="#">字母</a>
-								<a href="#">修身</a>
-								<a href="#">几何</a>
-								<a href="#">宽松</a>
-								<a href="#">不规则</a>
-							</div>
-						</div>
-					</li>
-					<li class="sortlist3">
-						<div class="cc">
-							<h2>韩风时尚HSTYLE</h2>
-							<div class="cclist">
-								<a href="#">T恤</a>
-								<a href="#">衬衫</a>
-								<a href="#">套装</a>
-								<a href="#">连衣裙</a>
-								<a href="#">半身裙</a>
-								<a href="#">牛仔裤</a>
-								<a href="#">休闲裤</a>
-								<a href="#">羽绒服</a>
-								<a href="#">毛呢外套</a>
-								<a href="#">棉衣</a>
-								<a href="#">毛针织衫</a>
-							</div>
-						</div>
-						<div class="cc">
-							<h2>时尚名媛SONEED</h2>
-							<div class="cclist">
-								<a href="#">T恤</a>
-								<a href="#">衬衫</a>
-								<a href="#">毛针织衫</a>
-								<a href="#">卫衣/绒衫</a>
-								<a href="#">套装</a>
-								<a href="#">风衣</a>
-								<a href="#">毛呢外套</a>
-								<a href="#">连衣裙</a>
-								<a href="#">牛仔裤</a>
-								<a href="#">休闲裤</a>
-							</div>
-						</div>
-						<div class="cc">
-							<h2>欧美风尚 尼班诗</h2>
-							<div class="cclist">
-								<a href="#">T恤</a>
-								<a href="#">衬衫</a>
-								<a href="#">蕾丝衫/雪纺衫</a>
-								<a href="#">卫衣/绒衫</a>
-								<a href="#">毛针织衫</a>
-								<a href="#">风衣</a>
-								<a href="#">毛呢外套</a>
-								<a href="#">牛仔裤</a>
-								<a href="#">休闲裤</a>
-								<a href="#">打底裤</a>
-								<a href="#">连衣裙</a>
-							</div>
-						</div>
-						<div class="cc">
-							<h2>甜美少女NanaDay</h2>
-							<div class="cclist">
-								<a href="#">毛针织衫</a>
-								<a href="#">T恤</a>
-								<a href="#">短外套</a>
-								<a href="#">衬衫</a>
-								<a href="#">棉衣棉服</a>
-								<a href="#">卫衣/绒衫</a>
-								<a href="#">套装</a>
-								<a href="#">连衣裙</a>
-								<a href="#">半身裙</a>
-								<a href="#">毛呢外套</a>
-								<a href="#">羽绒服</a>
-								<a href="#">裤装</a>
-							</div>
-						</div>
-						<div class="ccpic"><a href="#"><img src="{% static 'images/hstyle.png' %}"></a></div>
-						<div class="ccpic"><a href="#"><img src="{% static 'images/sulv.png' %}"></a></div>
-						<div class="ccpic"><a href="#"><img src="{% static 'images/nibbuns.png' %}"></a></div>
-						<div class="ccpic"><a href="#"><img src="{% static 'images/forqueen.png' %}"></a></div>
-						<div class="ccpic"><a href="#"><img src="{% static 'images/nana.png' %}"></a></div>
-						<div class="ccpic"><a href="#"><img src="{% static 'images/ytxz.png' %}"></a></div>
-					</li>
-					<li class="sortlist4">
-						<div class="dd">
-							<h2>韩风时尚Minizaru</h2>
-							<div class="ddlist">
-								<a href="#">T恤</a>
-								<a href="#">衬衫</a>
-								<a href="#">卫衣</a>
-								<a href="#">套装</a>
-								<a href="#">毛衣/针织衫</a>
-								<a href="#">毛呢/外套</a>
-								<a href="#">羽绒服饰</a>
-								<a href="#">半身裙</a>
-								<a href="#">连衣裙</a>
-								<a href="#">休闲裤</a>
-								<a href="#">牛仔裤</a>
-								<a href="#">打底裤</a>
-								<a href="#">短裤</a>
-								<a href="#">马甲</a>
-							</div>
-						</div>
-						<div class="dd">
-							<h2>欧美时尚HoneyPig</h2>
-							<div class="ddlist">
-								<a href="#">T恤</a>
-								<a href="#">衬衫</a>
-								<a href="#">卫衣</a>
-								<a href="#">毛衣/针织衫</a>
-								<a href="#">外套/夹克/大衣</a>
-								<a href="#">套装</a>
-								<a href="#">连衣裙</a>
-								<a href="#">半身裙</a>
-								<a href="#">短裤</a>
-								<a href="#">休闲裤</a>
-								<a href="#">打底裤</a>
-								<a href="#">牛仔裤</a>
-							</div>
-						</div>
-						<div class="dd">
-							<h2>东方简约 果芽</h2>
-							<div class="ddlist">
-								<a href="#">T恤/吊带衫</a>
-								<a href="#">毛衣/针织衫</a>
-								<a href="#">衬衫</a>
-								<a href="#">卫衣/绒衫</a>
-								<a href="#">外套</a>
-								<a href="#">裤子</a>
-								<a href="#">半身裙</a>
-								<a href="#">连衣裙</a>
-								<a href="#">棉衣/棉服</a>
-							</div>
-						</div>
-						<div class="ddpic"><a href="#"><img src="{% static 'images/mini.png' %}"></a></div>
-						<div class="ddpic"><a href="#"><img src="{% static 'images/guoya.png' %}"></a></div>
-						<div class="ddpic"><a href="#"><img src="{% static 'images/hp.png' %}"></a></div>
-						<div class="ddpic"><a href="#"><img src="{% static 'images/dx1.png' %}"></a></div>
-					</li>
-					<li class="sortlist5">
-						<div class="ee">
-							<h2>妈妈装</h2>
-							<div class="eelist">
-								<a href="#">T恤</a>
-								<a href="#">衬衫</a>
-								<a href="#">外套</a>
-								<a href="#">毛衣/针织</a>
-								<a href="#">风衣</a>
-								<a href="#">棉衣/棉服</a>
-								<a href="#">马甲</a>
-								<a href="#">裤子</a>
-								<a href="#">连衣裙</a>
-								<a href="#">半身裙</a>
-								<a href="#">套装</a>
-							</div>
-						</div>
-						<div class="ddpic"><a href="#"><img src="{% static 'images/hanyunyixiang.png' %}"></a></div>
-					</li>
-				</ul>
-			</div>
-		</div>
-		<div class="content">
-			<div class="floors">
-				<ul id="floor">
-					<li>1F<span class="active">新品时尚</span></li>
-					<li>2F<span>时尚女装</span></li>
-					<li>3F<span>女装</span></li>
-					<li>4F<span>妈妈装</span></li>
-					<li>5F<span>少女装</span></li>
-					<li>6F<span>童装</span></li>
-					<li>7F<span>女装欧</span></li>
-				</ul>
-			</div>
-			<div class="main">
-				<div class="announcement">
-					<p><a href="#">警惕不法分子冒充韩都衣舍进行行骗！ 查看详情》</a></p>
-				</div>
-				<div class="exportor">
-					<div class="exportor-l"></div>
-					<div class="exportor-r"></div>
-				</div>
-				<div class="con1" id="step">
-					<div class="con1-l">
-						<div class="con1-l-w">
-							<p>互联网品牌生态运营集团</p>
-						    <div class="con1-l-next"><a href="#"><img src="{% static 'images/bt.png' %}"></a><span>换一批</span></div>
-						</div>
-						<div class="con1-l-t">
-							<div class="toppic"><a href="#"><img src="{% static 'images/NA.jpg' %}"><img src="{% static 'images/con1-.jpg' %}"></a></div>
-							<div class="toppic"><a href="#"><img src="{% static 'images/HN-.jpg' %}"><img src="{% static 'images/HN-.jpg' %}"></a></div>
-							<div class="toppic"><a href="#"><img src="{% static 'images/FQ.jpg' %}"><img src="{% static 'images/con3.jpg' %}"></a></div>
-							<div class="toppic"><a href="#"><img src="{% static 'images/DKN.jpg' %}"><img src="{% static 'images/con4-.jpg' %}"></a></div>
-							<div class="toppic"><a href="#"><img src="{% static 'images/NBS.jpg' %}"><img src="{% static 'images/con5-.jpg' %}"></a></div>
-							<div class="toppic"><a href="#"><img src="{% static 'images/YT.jpg' %}"><img src="{% static 'images/con6-.jpg' %}"></a></div>
-							<div class="toppic"><a href="#"><img src="{% static 'images/SL.jpg' %}"><img src="{% static 'images/con7-.jpg' %}"></a></div>
-							<div class="toppic"><a href="#"><img src="{% static 'images/HN-.jpg' %}"><img src="{% static 'images/HN-.jpg' %}"></a></div>
-							<div class="toppic"><a href="#"><img src="{% static 'images/ZG-.jpg' %}"><img src="{% static 'images/con9-.jpg' %}"></a></div>
-							<div class="toppic"><a href="#"><img src="{% static 'images/mn-.jpg' %}"><img src="{% static 'images/con10-.jpg' %}"></a></div>
-							<div class="toppic"><a href="#"><img src="{% static 'images/pig-.jpg' %}"><img src="{% static 'images/con11-.jpg' %}"></a></div>
-							<div class="toppic"><a href="#"><img src="{% static 'images/hw-.jpg' %}"><img src="{% static 'images/con12-.jpg' %}"></a></div>
-							<div class="toppic"><a href="#"><img src="{% static 'images/gy.jpg' %}"><img src="{% static 'images/con13-.jpg' %}"></a></div>
-							<div class="toppic"><a href="#"><img src="{% static 'images/NA.jpg' %}"><img src="{% static 'images/con14-.jpg' %}"></a></div>
-							<div class="toppic"><a href="#"><img src="{% static 'images/H-.jpg' %}"><img src="{% static 'images/H-.jpg' %}"></a></div>
-							<div class="toppic"><a href="#"><img src="{% static 'images/FQ.jpg' %}"><img src="{% static 'images/con16-.jpg' %}"></a></div>
-						</div>
-						<div class="con1-l-b">
-						    <a href="#"><img src="{% static 'images/680.png' %}"></a>
-						</div>
-					</div>
-					<div class="con1-r">
-						<div class="con1-r-1">
-							<div class="con1-r-t">
-							<ul>
-								<li><a href="#">韩都动态</a></li>
-								<li><a href="#">明星家族</a></li>
-								<li><a href="#">媒体报道</a></li>
-								<li><a href="#">无穷花开</a></li>
-							</ul>
-						    </div>
-						    <div class="con1-r-public">
-							    <div class="con1-r-one">
-							    	<a href="#">
-							    		<img src="{% static 'images/230_1.jpg' %}">
-							    		<span>同心逐梦.志在巅峰</span>
-							    	</a>
-							    	<ul>
-							    		<li><a href="#">韩都衣舍签约亚洲女神朴信惠</a></li>
-							    		<li><a href="#">签约朴信惠，韩都衣舍将要做什么？</a></li>
-							    		<li><a href="#">中韩首届电商大会召开 韩都衣舍受邀</a></li>
-							    	</ul>
-							    </div>
-							    <div class="con1-r-one">
-							    	<a href="#">
-							    		<img src="{% static 'images/2.jpg' %}">
-							    		<span>韩都衣舍上市获批！成互联网服饰品牌第</span>
-							    	</a>
-							    	<ul>
-							    		<li><a href="#">韩都衣舍旗下男装AMH摘得双11淘品冠军</a></li>
-							    		<li><a href="#">韩都衣舍多级跳 淘品牌到孵化器</a></li>
-							    		<li><a href="#">情人节，韩都老总竟然为数百人带婚戒</a></li>
-							    	</ul>
-							    </div>
-						    </div>
-						    <div class="con1-r-b">
-						    	<a href="#"><img src="{% static 'images/spfm.png' %}"></a>
-						    </div>
-						</div>
-					</div>
-				</div>
-				<div class="con2" id="step">
-					<div class="con2-top">
-						<span>新品上市<i>New Arrival</i></span>
-						<ul>
-							<li><a href="#" class="con2active">韩风女装</a></li>
-							<li><a href="#">甜美少女</a></li>
-							<li><a href="#">迪葵纳</a></li>
-							<li><a href="#">韩风男装</a></li>
-							<li><a href="#">韩风童装</a></li>
-					    </ul>
-					</div>
-					<div class="con2listpic">
-<!--韩风女装-->
-						<ul>
-						    <li>
-							    <div class="publicpic"><img src="{% static 'images/H11.jpg' %}"></div>
-							    <p>￥146.00￥278.00</p>
-							    <div class="publicpic-t">立即抢购</div>
-						    </li>
-						    <li>
-							    <div class="publicpic"><img src="{% static 'images/H12.jpg' %}"></div>
-							    <p>￥146.00￥278.00</p>
-							    <div class="publicpic-t">立即抢购</div>
-						    </li>
-						    <li>
-							    <div class="publicpic"><img src="{% static 'images/H13.jpg' %}"></div>
-							    <p>￥146.00￥278.00</p>
-							    <div class="publicpic-t">立即抢购</div>
-						    </li>
-						    <li>
-							    <div class="publicpic"><img src="{% static 'images/H14.jpg' %}"></div>
-							    <p>￥146.00￥278.00</p>
-							    <div class="publicpic-t">立即抢购</div>
-						    </li>
-						    <li>
-							    <div class="publicpic"><img src="{% static 'images/H15.jpg' %}"></div>
-							    <p>￥146.00￥278.00</p>
-							    <div class="publicpic-t">立即抢购</div>
-						    </li>
-					    </ul>
- <!--甜美少女-->
-					    <ul style="display: none;">
-						    <li>
-							    <div class="publicpic"><img src="{% static 'images/N11.jpg' %}"></div>
-							    <p>￥146.00￥278.00</p>
-							    <div class="publicpic-t">立即抢购</div>
-						    </li>
-						    <li>
-							    <div class="publicpic"><img src="{% static 'images/N12.jpg' %}"></div>
-							    <p>￥146.00￥278.00</p>
-							    <div class="publicpic-t">立即抢购</div>
-						    </li>
-						    <li>
-							    <div class="publicpic"><img src="{% static 'images/N13.jpg' %}"></div>
-							    <p>￥146.00￥278.00</p>
-							    <div class="publicpic-t">立即抢购</div>
-						    </li>
-						    <li>
-							    <div class="publicpic"><img src="{% static 'images/N14.jpg' %}"></div>
-							    <p>￥146.00￥278.00</p>
-							    <div class="publicpic-t">立即抢购</div>
-						    </li>
-						    <li>
-							    <div class="publicpic"><img src="{% static 'images/N15.jpg' %}"></div>
-							    <p>￥146.00￥278.00</p>
-							    <div class="publicpic-t">立即抢购</div>
-						    </li>
-					    </ul>
-  <!--迪葵纳-->
-					    <ul style="display: none;">
-						    <li>
-							    <div class="publicpic"><img src="{% static 'images/D11.jpg' %}"></div>
-							    <p>￥146.00￥278.00</p>
-							    <div class="publicpic-t">立即抢购</div>
-						    </li>
-						    <li>
-							    <div class="publicpic"><img src="{% static 'images/D12.jpg' %}"></div>
-							    <p>￥146.00￥278.00</p>
-							    <div class="publicpic-t">立即抢购</div>
-						    </li>
-						    <li>
-							    <div class="publicpic"><img src="{% static 'images/D13.jpg' %}"></div>
-							    <p>￥146.00￥278.00</p>
-							    <div class="publicpic-t">立即抢购</div>
-						    </li>
-						    <li>
-							    <div class="publicpic"><img src="{% static 'images/D14.jpg' %}"></div>
-							    <p>￥146.00￥278.00</p>
-							    <div class="publicpic-t">立即抢购</div>
-						    </li>
-						    <li>
-							    <div class="publicpic"><img src="{% static 'images/D15.jpg' %}"></div>
-							    <p>￥146.00￥278.00</p>
-							    <div class="publicpic-t">立即抢购</div>
-						    </li>
-					    </ul>
-  <!--韩风男装-->
-					    <ul style="display: none;">
-						    <li>
-							    <div class="publicpic"><img src="{% static 'images/HN1.jpg' %}"></div>
-							    <p>￥146.00￥278.00</p>
-							    <div class="publicpic-t">立即抢购</div>
-						    </li>
-						    <li>
-							    <div class="publicpic"><img src="{% static 'images/HN2.jpg' %}"></div>
-							    <p>￥146.00￥278.00</p>
-							    <div class="publicpic-t">立即抢购</div>
-						    </li>
-						    <li>
-							    <div class="publicpic"><img src="{% static 'images/HN3.jpg' %}"></div>
-							    <p>￥146.00￥278.00</p>
-							    <div class="publicpic-t">立即抢购</div>
-						    </li>
-						    <li>
-							    <div class="publicpic"><img src="{% static 'images/HN4.jpg' %}"></div>
-							    <p>￥146.00￥278.00</p>
-							    <div class="publicpic-t">立即抢购</div>
-						    </li>
-						    <li>
-							    <div class="publicpic"><img src="{% static 'images/HN5.jpg' %}"></div>
-							    <p>￥146.00￥278.00</p>
-							    <div class="publicpic-t">立即抢购</div>
-						    </li>
-					    </ul>
-<!--韩风童装-->
-					    <ul style="display: none;">
-						    <li>
-							    <div class="publicpic"><img src="{% static 'images/M11.jpg' %}"></div>
-							    <p>￥146.00￥278.00</p>
-							    <div class="publicpic-t">立即抢购</div>
-						    </li>
-						    <li>
-							    <div class="publicpic"><img src="{% static 'images/M12.jpg' %}"></div>
-							    <p>￥146.00￥278.00</p>
-							    <div class="publicpic-t">立即抢购</div>
-						    </li>
-						    <li>
-							    <div class="publicpic"><img src="{% static 'images/M13.jpg' %}"></div>
-							    <p>￥146.00￥278.00</p>
-							    <div class="publicpic-t">立即抢购</div>
-						    </li>
-						    <li>
-							    <div class="publicpic"><img src="{% static 'images/M14.jpg' %}"></div>
-							    <p>￥146.00￥278.00</p>
-							    <div class="publicpic-t">立即抢购</div>
-						    </li>
-						    <li>
-							    <div class="publicpic"><img src="{% static 'images/M15.jpg' %}"></div>
-							    <p>￥146.00￥278.00</p>
-							    <div class="publicpic-t">立即抢购</div>
-						    </li>
-					    </ul>
-					</div>
-				</div>
-<!--第三部分-->
-				<div class="con3" id="step">
-					<div class="con3-top">
-						<div class="con3-top-r">
-							<ul>
-								<li><a href="#">2017秋装新品</a></li>
-								<li><a href="#">连衣裙</a></li>
-								<li><a href="#">针织衫</a></li>
-								<li><a href="#">卫衣</a></li>
-								<li><a href="#">短外套</a></li>
-								<li><a href="#">T恤</a></li>
-								<li><a href="#">裤装</a></li>
-								<li><a href="#">更多&gt;</a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="con3-c">
-						<div class="con3-c-l">
-							<img src="{% static 'images/lianyiqun.jpg' %}">
-							<span>连衣裙专区<i>&gt;</i></span>
-							<ul>
-								<li><a href="#">裙装</a></li>
-								<li><a href="#">连衣裙</a></li>
-								<li><a href="#">毛针织衫</a></li>
-								<li><a href="#">牛仔裤</a></li>
-								<li><a href="#">卫衣/绒衫</a></li>
-								<li><a href="#">短外套</a></li>
-								<li><a href="#">休闲外套</a></li>
-								<li><a href="#">T恤</a></li>
-								<li><a href="#">休闲裤</a></li>
+<div class="sort">
+    <p>全部商品分类</p>
+    <ul id="sortlist">
+        <li>
+            <h3>
+                <span><img src="{% static 'images/tb1.png' %}"></span><i>全部商品分类</i>
+            </h3>
+            <a href="#">本周新品</a>
+            <a href="#">按价格</a>
+            <a href="#">按销量</a>
+            <b><img src="{% static 'images/leftjt.png' %}"></b>
+        </li>
+        <li>
+            <h3>
+                <span><img src="{% static 'images/tb2.png' %}"></span><i>精选商品</i>
+            </h3>
+            <a href="#">连衣裙</a>
+            <a href="#">潮流爆款</a>
+            <a href="#">品牌特惠</a>
+            <b><img src="{% static 'images/leftjt.png' %}"></b>
+        </li>
+        <li>
+            <h3>
+                <span><img src="{% static 'images/tb3.png' %}"></span><i>潮流女装</i>
+            </h3>
+            <a href="#">短外套</a>
+            <a href="#">T恤</a>
+            <a href="#">牛仔裤</a>
+            <b><img src="{% static 'images/leftjt.png' %}"></b>
+        </li>
+        <li>
+            <h3>
+                <span><img src="{% static 'images/tb5.png' %}"></span><i>可爱童装</i>
+            </h3>
+            <a href="#">童装新品</a>
+            <a href="#">套装</a>
+            <a href="#">毛衣/针织衫</a>
+            <b><img src="{% static 'images/leftjt.png' %}"></b>
+        </li>
+        <li>
+            <h3>
+                <span><img src="{% static 'images/tb6.png' %}"></span><i>时尚妈妈</i>
+            </h3>
+            <a href="#">T恤</a>
+            <a href="#">针织衫</a>
+            <a href="#">衬衫</a>
+            <b><img src="{% static 'images/leftjt.png' %}"></b>
+        </li>
+        <li>
+            <h3>
+                <span><img src="{% static 'images/w.png' %}"></span><i>韩风男装</i>
+            </h3>
+            <a href="#">上装</a>
+            <a href="#">下装</a>
+            <a href="#">全部商品</a>
+            <b><img src="{% static 'images/leftjt.png' %}"></b>
+        </li>
+        <li>
+            <h3>
+                <span><img src="{% static 'images/tb8.png' %}"></span><i>明星同款</i>
+            </h3>
+            <a href="#">全智贤同款</a>
+            <a href="#">崔范锡系列</a>
+            <b><img src="{% static 'images/leftjt.png' %}"></b>
+        </li>
+    </ul>
+    <ul id="sortlistone">
+        <li class="sortlist1">
+            <div class="aa"><a href="#"><img src="{% static 'images/nana.png' %}"></a></div>
+            <div class="aa"><a href="#"><img src="{% static 'images/ht.png' %}"></a></div>
+            <div class="aa"><a href="#"><img src="{% static 'images/hstyle.png' %}"></a></div>
+            <div class="aa"><a href="#"><img src="{% static 'images/mini.png' %}"></a></div>
+            <div class="aa"><a href="#"><img src="{% static 'images/forqueen.png' %}"></a></div>
+            <div class="aa"><a href="#"><img src="{% static 'images/hp.png' %}"></a></div>
+            <div class="aa"><a href="#"><img src="{% static 'images/hanyunyixiang.png' %}"></a></div>
+            <div class="aa"><a href="#"><img src="{% static 'images/dx1.png' %}"></a></div>
+            <div class="aa"><a href="#"><img src="{% static 'images/nibbuns.png' %}"></a></div>
+            <div class="aa"><a href="#"><img src="{% static 'images/guoya.png' %}"></a></div>
+            <div class="aa"><a href="#"><img src="{% static 'images/sulv.png' %}"></a></div>
+            <div class="aa"><a href="#"><img src="{% static 'images/Hn.png' %}"></a></div>
+            <div class="aa"><a href="#"><img src="{% static 'images/anma.png' %}"></a></div>
+            <div class="aa"><a href="#"><img src="{% static 'images/zg.png' %}"></a></div>
+        </li>
+        <li class="sortlist2">
+            <div class="bb">
+                <h2>特惠精选</h2>
+                <div class="bblist">
+                    <a href="#">清仓特惠</a>
+                    <a href="#">爆款特惠</a>
+                </div>
+            </div>
+            <div class="bb">
+                <h2>潮流新品</h2>
+                <div class="bblist">
+                    <a href="#">2017秋装新品</a>
+                    <a href="#">原创新品</a>
+                    <a href="#">连衣裙 </a>
+                    <a href="#">卫衣</a>
+                    <a href="#">毛针织衫 </a>
+                </div>
+            </div>
+            <div class="bb">
+                <h2>类目新品</h2>
+                <div class="bblist">
+                    <a href="#">连衣裙</a>
+                    <a href="#">牛仔裤</a>
+                    <a href="#">衬衫</a>
+                    <a href="#">卫衣</a>
+                    <a href="#">T恤</a>
+                    <a href="#">休闲裤</a>
+                    <a href="#">半身裙</a>
+                    <a href="#">套装</a>
+                    <a href="#">羽绒服</a>
+                    <a href="#">毛呢外衣</a>
+                    <a href="#">棉衣</a>
+                    <a href="#">毛针织衫</a>
+                </div>
+            </div>
+            <div class="bb">
+                <h2>爆款集锦</h2>
+                <div class="bblist">
+                    <a href="#">2017秋装爆款</a>
+                    <a href="#">女装爆款</a>
+                    <a href="#">男装爆款</a>
+                    <a href="#">童装爆款</a>
+                    <a href="#">妈妈装爆款</a>
+                </div>
+            </div>
+            <div class="bb">
+                <h2>百变风格</h2>
+                <div class="bblist">
+                    <a href="#">潮流韩范</a>
+                    <a href="#">纯色</a>
+                    <a href="#">优雅OL</a>
+                    <a href="#">印花</a>
+                    <a href="#">甜美清新</a>
+                    <a href="#">条纹</a>
+                    <a href="#">度假出游</a>
+                    <a href="#">拼接</a>
+                    <a href="#">复古</a>
+                    <a href="#">字母</a>
+                    <a href="#">修身</a>
+                    <a href="#">几何</a>
+                    <a href="#">宽松</a>
+                    <a href="#">不规则</a>
+                </div>
+            </div>
+        </li>
+        <li class="sortlist3">
+            <div class="cc">
+                <h2>韩风时尚HSTYLE</h2>
+                <div class="cclist">
+                    <a href="#">T恤</a>
+                    <a href="#">衬衫</a>
+                    <a href="#">套装</a>
+                    <a href="#">连衣裙</a>
+                    <a href="#">半身裙</a>
+                    <a href="#">牛仔裤</a>
+                    <a href="#">休闲裤</a>
+                    <a href="#">羽绒服</a>
+                    <a href="#">毛呢外套</a>
+                    <a href="#">棉衣</a>
+                    <a href="#">毛针织衫</a>
+                </div>
+            </div>
+            <div class="cc">
+                <h2>时尚名媛SONEED</h2>
+                <div class="cclist">
+                    <a href="#">T恤</a>
+                    <a href="#">衬衫</a>
+                    <a href="#">毛针织衫</a>
+                    <a href="#">卫衣/绒衫</a>
+                    <a href="#">套装</a>
+                    <a href="#">风衣</a>
+                    <a href="#">毛呢外套</a>
+                    <a href="#">连衣裙</a>
+                    <a href="#">牛仔裤</a>
+                    <a href="#">休闲裤</a>
+                </div>
+            </div>
+            <div class="cc">
+                <h2>欧美风尚 尼班诗</h2>
+                <div class="cclist">
+                    <a href="#">T恤</a>
+                    <a href="#">衬衫</a>
+                    <a href="#">蕾丝衫/雪纺衫</a>
+                    <a href="#">卫衣/绒衫</a>
+                    <a href="#">毛针织衫</a>
+                    <a href="#">风衣</a>
+                    <a href="#">毛呢外套</a>
+                    <a href="#">牛仔裤</a>
+                    <a href="#">休闲裤</a>
+                    <a href="#">打底裤</a>
+                    <a href="#">连衣裙</a>
+                </div>
+            </div>
+            <div class="cc">
+                <h2>甜美少女NanaDay</h2>
+                <div class="cclist">
+                    <a href="#">毛针织衫</a>
+                    <a href="#">T恤</a>
+                    <a href="#">短外套</a>
+                    <a href="#">衬衫</a>
+                    <a href="#">棉衣棉服</a>
+                    <a href="#">卫衣/绒衫</a>
+                    <a href="#">套装</a>
+                    <a href="#">连衣裙</a>
+                    <a href="#">半身裙</a>
+                    <a href="#">毛呢外套</a>
+                    <a href="#">羽绒服</a>
+                    <a href="#">裤装</a>
+                </div>
+            </div>
+            <div class="ccpic"><a href="#"><img src="{% static 'images/hstyle.png' %}"></a></div>
+            <div class="ccpic"><a href="#"><img src="{% static 'images/sulv.png' %}"></a></div>
+            <div class="ccpic"><a href="#"><img src="{% static 'images/nibbuns.png' %}"></a></div>
+            <div class="ccpic"><a href="#"><img src="{% static 'images/forqueen.png' %}"></a></div>
+            <div class="ccpic"><a href="#"><img src="{% static 'images/nana.png' %}"></a></div>
+            <div class="ccpic"><a href="#"><img src="{% static 'images/ytxz.png' %}"></a></div>
+        </li>
+        <li class="sortlist4">
+            <div class="dd">
+                <h2>韩风时尚Minizaru</h2>
+                <div class="ddlist">
+                    <a href="#">T恤</a>
+                    <a href="#">衬衫</a>
+                    <a href="#">卫衣</a>
+                    <a href="#">套装</a>
+                    <a href="#">毛衣/针织衫</a>
+                    <a href="#">毛呢/外套</a>
+                    <a href="#">羽绒服饰</a>
+                    <a href="#">半身裙</a>
+                    <a href="#">连衣裙</a>
+                    <a href="#">休闲裤</a>
+                    <a href="#">牛仔裤</a>
+                    <a href="#">打底裤</a>
+                    <a href="#">短裤</a>
+                    <a href="#">马甲</a>
+                </div>
+            </div>
+            <div class="dd">
+                <h2>欧美时尚HoneyPig</h2>
+                <div class="ddlist">
+                    <a href="#">T恤</a>
+                    <a href="#">衬衫</a>
+                    <a href="#">卫衣</a>
+                    <a href="#">毛衣/针织衫</a>
+                    <a href="#">外套/夹克/大衣</a>
+                    <a href="#">套装</a>
+                    <a href="#">连衣裙</a>
+                    <a href="#">半身裙</a>
+                    <a href="#">短裤</a>
+                    <a href="#">休闲裤</a>
+                    <a href="#">打底裤</a>
+                    <a href="#">牛仔裤</a>
+                </div>
+            </div>
+            <div class="dd">
+                <h2>东方简约 果芽</h2>
+                <div class="ddlist">
+                    <a href="#">T恤/吊带衫</a>
+                    <a href="#">毛衣/针织衫</a>
+                    <a href="#">衬衫</a>
+                    <a href="#">卫衣/绒衫</a>
+                    <a href="#">外套</a>
+                    <a href="#">裤子</a>
+                    <a href="#">半身裙</a>
+                    <a href="#">连衣裙</a>
+                    <a href="#">棉衣/棉服</a>
+                </div>
+            </div>
+            <div class="ddpic"><a href="#"><img src="{% static 'images/mini.png' %}"></a></div>
+            <div class="ddpic"><a href="#"><img src="{% static 'images/guoya.png' %}"></a></div>
+            <div class="ddpic"><a href="#"><img src="{% static 'images/hp.png' %}"></a></div>
+            <div class="ddpic"><a href="#"><img src="{% static 'images/dx1.png' %}"></a></div>
+        </li>
+        <li class="sortlist5">
+            <div class="ee">
+                <h2>妈妈装</h2>
+                <div class="eelist">
+                    <a href="#">T恤</a>
+                    <a href="#">衬衫</a>
+                    <a href="#">外套</a>
+                    <a href="#">毛衣/针织</a>
+                    <a href="#">风衣</a>
+                    <a href="#">棉衣/棉服</a>
+                    <a href="#">马甲</a>
+                    <a href="#">裤子</a>
+                    <a href="#">连衣裙</a>
+                    <a href="#">半身裙</a>
+                    <a href="#">套装</a>
+                </div>
+            </div>
+            <div class="ddpic"><a href="#"><img src="{% static 'images/hanyunyixiang.png' %}"></a></div>
+        </li>
+    </ul>
+</div>
+</div>
+<div class="content">
+    <div class="floors">
+        <ul id="floor">
+            <li>1F<span class="active">新品时尚</span></li>
+            <li>2F<span>时尚女装</span></li>
+            <li>3F<span>女装</span></li>
+            <li>4F<span>妈妈装</span></li>
+            <li>5F<span>少女装</span></li>
+            <li>6F<span>童装</span></li>
+            <li>7F<span>女装欧</span></li>
+        </ul>
+    </div>
+    <div class="main">
+        <div class="announcement">
+            <p><a href="#">警惕不法分子冒充韩都衣舍进行行骗！ 查看详情》</a></p>
+        </div>
+        <div class="exportor">
+            <div class="exportor-l"></div>
+            <div class="exportor-r"></div>
+        </div>
+        <div class="con1" id="step">
+            <div class="con1-l">
+                <div class="con1-l-w">
+                    <p>互联网品牌生态运营集团</p>
+                    <div class="con1-l-next"><a href="#"><img src="{% static 'images/bt.png' %}"></a><span>换一批</span>
+                    </div>
+                </div>
+                <div class="con1-l-t">
+                    <div class="toppic"><a href="#"><img src="{% static 'images/NA.jpg' %}"><img
+                            src="{% static 'images/con1-.jpg' %}"></a></div>
+                    <div class="toppic"><a href="#"><img src="{% static 'images/HN-.jpg' %}"><img
+                            src="{% static 'images/HN-.jpg' %}"></a></div>
+                    <div class="toppic"><a href="#"><img src="{% static 'images/FQ.jpg' %}"><img
+                            src="{% static 'images/con3.jpg' %}"></a></div>
+                    <div class="toppic"><a href="#"><img src="{% static 'images/DKN.jpg' %}"><img
+                            src="{% static 'images/con4-.jpg' %}"></a></div>
+                    <div class="toppic"><a href="#"><img src="{% static 'images/NBS.jpg' %}"><img
+                            src="{% static 'images/con5-.jpg' %}"></a></div>
+                    <div class="toppic"><a href="#"><img src="{% static 'images/YT.jpg' %}"><img
+                            src="{% static 'images/con6-.jpg' %}"></a></div>
+                    <div class="toppic"><a href="#"><img src="{% static 'images/SL.jpg' %}"><img
+                            src="{% static 'images/con7-.jpg' %}"></a></div>
+                    <div class="toppic"><a href="#"><img src="{% static 'images/HN-.jpg' %}"><img
+                            src="{% static 'images/HN-.jpg' %}"></a></div>
+                    <div class="toppic"><a href="#"><img src="{% static 'images/ZG-.jpg' %}"><img
+                            src="{% static 'images/con9-.jpg' %}"></a></div>
+                    <div class="toppic"><a href="#"><img src="{% static 'images/mn-.jpg' %}"><img
+                            src="{% static 'images/con10-.jpg' %}"></a></div>
+                    <div class="toppic"><a href="#"><img src="{% static 'images/pig-.jpg' %}"><img
+                            src="{% static 'images/con11-.jpg' %}"></a></div>
+                    <div class="toppic"><a href="#"><img src="{% static 'images/hw-.jpg' %}"><img
+                            src="{% static 'images/con12-.jpg' %}"></a></div>
+                    <div class="toppic"><a href="#"><img src="{% static 'images/gy.jpg' %}"><img
+                            src="{% static 'images/con13-.jpg' %}"></a></div>
+                    <div class="toppic"><a href="#"><img src="{% static 'images/NA.jpg' %}"><img
+                            src="{% static 'images/con14-.jpg' %}"></a></div>
+                    <div class="toppic"><a href="#"><img src="{% static 'images/H-.jpg' %}"><img
+                            src="{% static 'images/H-.jpg' %}"></a></div>
+                    <div class="toppic"><a href="#"><img src="{% static 'images/FQ.jpg' %}"><img
+                            src="{% static 'images/con16-.jpg' %}"></a></div>
+                </div>
+                <div class="con1-l-b">
+                    <a href="#"><img src="{% static 'images/680.png' %}"></a>
+                </div>
+            </div>
+            <div class="con1-r">
+                <div class="con1-r-1">
+                    <div class="con1-r-t">
+                        <ul>
+                            <li><a href="#">韩都动态</a></li>
+                            <li><a href="#">明星家族</a></li>
+                            <li><a href="#">媒体报道</a></li>
+                            <li><a href="#">无穷花开</a></li>
+                        </ul>
+                    </div>
+                    <div class="con1-r-public">
+                        <div class="con1-r-one">
+                            <a href="#">
+                                <img src="{% static 'images/230_1.jpg' %}">
+                                <span>同心逐梦.志在巅峰</span>
+                            </a>
+                            <ul>
+                                <li><a href="#">韩都衣舍签约亚洲女神朴信惠</a></li>
+                                <li><a href="#">签约朴信惠，韩都衣舍将要做什么？</a></li>
+                                <li><a href="#">中韩首届电商大会召开 韩都衣舍受邀</a></li>
+                            </ul>
+                        </div>
+                        <div class="con1-r-one">
+                            <a href="#">
+                                <img src="{% static 'images/2.jpg' %}">
+                                <span>韩都衣舍上市获批！成互联网服饰品牌第</span>
+                            </a>
+                            <ul>
+                                <li><a href="#">韩都衣舍旗下男装AMH摘得双11淘品冠军</a></li>
+                                <li><a href="#">韩都衣舍多级跳 淘品牌到孵化器</a></li>
+                                <li><a href="#">情人节，韩都老总竟然为数百人带婚戒</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="con1-r-b">
+                        <a href="#"><img src="{% static 'images/spfm.png' %}"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="con2" id="step">
+            <div class="con2-top">
+                <span>新品上市<i>New Arrival</i></span>
+                <ul>
+                    <li><a href="#" class="con2active">韩风女装</a></li>
+                    <li><a href="#">甜美少女</a></li>
+                    <li><a href="#">迪葵纳</a></li>
+                    <li><a href="#">韩风男装</a></li>
+                    <li><a href="#">韩风童装</a></li>
+                </ul>
+            </div>
+            <div class="con2listpic">
+                <!--韩风女装-->
+                <ul>
+                    <li>
+                        <div class="publicpic"><img src="{% static 'images/H11.jpg' %}"></div>
+                        <p>￥146.00￥278.00</p>
+                        <div class="publicpic-t">立即抢购</div>
+                    </li>
+                    <li>
+                        <div class="publicpic"><img src="{% static 'images/H12.jpg' %}"></div>
+                        <p>￥146.00￥278.00</p>
+                        <div class="publicpic-t">立即抢购</div>
+                    </li>
+                    <li>
+                        <div class="publicpic"><img src="{% static 'images/H13.jpg' %}"></div>
+                        <p>￥146.00￥278.00</p>
+                        <div class="publicpic-t">立即抢购</div>
+                    </li>
+                    <li>
+                        <div class="publicpic"><img src="{% static 'images/H14.jpg' %}"></div>
+                        <p>￥146.00￥278.00</p>
+                        <div class="publicpic-t">立即抢购</div>
+                    </li>
+                    <li>
+                        <div class="publicpic"><img src="{% static 'images/H15.jpg' %}"></div>
+                        <p>￥146.00￥278.00</p>
+                        <div class="publicpic-t">立即抢购</div>
+                    </li>
+                </ul>
+                <!--甜美少女-->
+                <ul style="display: none;">
+                    <li>
+                        <div class="publicpic"><img src="{% static 'images/N11.jpg' %}"></div>
+                        <p>￥146.00￥278.00</p>
+                        <div class="publicpic-t">立即抢购</div>
+                    </li>
+                    <li>
+                        <div class="publicpic"><img src="{% static 'images/N12.jpg' %}"></div>
+                        <p>￥146.00￥278.00</p>
+                        <div class="publicpic-t">立即抢购</div>
+                    </li>
+                    <li>
+                        <div class="publicpic"><img src="{% static 'images/N13.jpg' %}"></div>
+                        <p>￥146.00￥278.00</p>
+                        <div class="publicpic-t">立即抢购</div>
+                    </li>
+                    <li>
+                        <div class="publicpic"><img src="{% static 'images/N14.jpg' %}"></div>
+                        <p>￥146.00￥278.00</p>
+                        <div class="publicpic-t">立即抢购</div>
+                    </li>
+                    <li>
+                        <div class="publicpic"><img src="{% static 'images/N15.jpg' %}"></div>
+                        <p>￥146.00￥278.00</p>
+                        <div class="publicpic-t">立即抢购</div>
+                    </li>
+                </ul>
+                <!--迪葵纳-->
+                <ul style="display: none;">
+                    <li>
+                        <div class="publicpic"><img src="{% static 'images/D11.jpg' %}"></div>
+                        <p>￥146.00￥278.00</p>
+                        <div class="publicpic-t">立即抢购</div>
+                    </li>
+                    <li>
+                        <div class="publicpic"><img src="{% static 'images/D12.jpg' %}"></div>
+                        <p>￥146.00￥278.00</p>
+                        <div class="publicpic-t">立即抢购</div>
+                    </li>
+                    <li>
+                        <div class="publicpic"><img src="{% static 'images/D13.jpg' %}"></div>
+                        <p>￥146.00￥278.00</p>
+                        <div class="publicpic-t">立即抢购</div>
+                    </li>
+                    <li>
+                        <div class="publicpic"><img src="{% static 'images/D14.jpg' %}"></div>
+                        <p>￥146.00￥278.00</p>
+                        <div class="publicpic-t">立即抢购</div>
+                    </li>
+                    <li>
+                        <div class="publicpic"><img src="{% static 'images/D15.jpg' %}"></div>
+                        <p>￥146.00￥278.00</p>
+                        <div class="publicpic-t">立即抢购</div>
+                    </li>
+                </ul>
+                <!--韩风男装-->
+                <ul style="display: none;">
+                    <li>
+                        <div class="publicpic"><img src="{% static 'images/HN1.jpg' %}"></div>
+                        <p>￥146.00￥278.00</p>
+                        <div class="publicpic-t">立即抢购</div>
+                    </li>
+                    <li>
+                        <div class="publicpic"><img src="{% static 'images/HN2.jpg' %}"></div>
+                        <p>￥146.00￥278.00</p>
+                        <div class="publicpic-t">立即抢购</div>
+                    </li>
+                    <li>
+                        <div class="publicpic"><img src="{% static 'images/HN3.jpg' %}"></div>
+                        <p>￥146.00￥278.00</p>
+                        <div class="publicpic-t">立即抢购</div>
+                    </li>
+                    <li>
+                        <div class="publicpic"><img src="{% static 'images/HN4.jpg' %}"></div>
+                        <p>￥146.00￥278.00</p>
+                        <div class="publicpic-t">立即抢购</div>
+                    </li>
+                    <li>
+                        <div class="publicpic"><img src="{% static 'images/HN5.jpg' %}"></div>
+                        <p>￥146.00￥278.00</p>
+                        <div class="publicpic-t">立即抢购</div>
+                    </li>
+                </ul>
+                <!--韩风童装-->
+                <ul style="display: none;">
+                    <li>
+                        <div class="publicpic"><img src="{% static 'images/M11.jpg' %}"></div>
+                        <p>￥146.00￥278.00</p>
+                        <div class="publicpic-t">立即抢购</div>
+                    </li>
+                    <li>
+                        <div class="publicpic"><img src="{% static 'images/M12.jpg' %}"></div>
+                        <p>￥146.00￥278.00</p>
+                        <div class="publicpic-t">立即抢购</div>
+                    </li>
+                    <li>
+                        <div class="publicpic"><img src="{% static 'images/M13.jpg' %}"></div>
+                        <p>￥146.00￥278.00</p>
+                        <div class="publicpic-t">立即抢购</div>
+                    </li>
+                    <li>
+                        <div class="publicpic"><img src="{% static 'images/M14.jpg' %}"></div>
+                        <p>￥146.00￥278.00</p>
+                        <div class="publicpic-t">立即抢购</div>
+                    </li>
+                    <li>
+                        <div class="publicpic"><img src="{% static 'images/M15.jpg' %}"></div>
+                        <p>￥146.00￥278.00</p>
+                        <div class="publicpic-t">立即抢购</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--第三部分-->
+        <div class="con3" id="step">
+            <div class="con3-top">
+                <div class="con3-top-r">
+                    <ul>
+                        <li><a href="#">2017秋装新品</a></li>
+                        <li><a href="#">连衣裙</a></li>
+                        <li><a href="#">针织衫</a></li>
+                        <li><a href="#">卫衣</a></li>
+                        <li><a href="#">短外套</a></li>
+                        <li><a href="#">T恤</a></li>
+                        <li><a href="#">裤装</a></li>
+                        <li><a href="#">更多&gt;</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="con3-c">
+                <div class="con3-c-l">
+                    <img src="{% static 'images/lianyiqun.jpg' %}">
+                    <span>连衣裙专区<i>&gt;</i></span>
+                    <ul>
+                        <li><a href="#">裙装</a></li>
+                        <li><a href="#">连衣裙</a></li>
+                        <li><a href="#">毛针织衫</a></li>
+                        <li><a href="#">牛仔裤</a></li>
+                        <li><a href="#">卫衣/绒衫</a></li>
+                        <li><a href="#">短外套</a></li>
+                        <li><a href="#">休闲外套</a></li>
+                        <li><a href="#">T恤</a></li>
+                        <li><a href="#">休闲裤</a></li>
 
-							</ul>
-						</div>
-						<div class="con3-c-c"><a href="#"><img src="{% static 'images/banner2.jpg' %}"></a></div>
-						<div class="con3-c-r">
-							<div class="con3-pic">
-									<a href="#"><img src="{% static 'images/tx.jpg' %}"></a>
-									<a href="#"><img src="{% static 'images/wy.jpg' %}"></a>
-							</div>
-							<div class="con3-hot">
-								<p>热销排行榜</p>
-								<ul>
-									<!--<li>
-										<h2><span><img src="../images/01.png"/></span>2017韩版女夏装新款显</h2>
-										<div class="hot">
-											<img src="../images/007.jpg"/>
-											<div class="hotlist">
-												<div class="hotlist1">2017韩版女夏装新款显</div>
-												<div class="hotlist2">￥158.00</div>
-												<div class="hotlist3">￥328.00</div>
-												<div class="hotlist4">已售出<i>6666</i>笔</div>
-											</div>
-										</div>
-									</li>-->
-									<!--<li>
-										<h2><span><img src="../images/02.png"/></span>2017韩版女夏装新款宽</h2>
-									</li>
-									<li>
-										<h2><span><img src="../images/03.png"/></span>2017韩版女夏装新款网</h2>
-									</li>
-									<li>
-										<h2><span><img src="../images/04.png"/></span>2017秋装韩版百搭上衣</h2>
-									</li>
-									<li>
-										<h2><span><img src="../images/05.png"/></span>2017秋装韩版女装系带</h2>
-									</li>
-									<li>
-										<h2><span><img src="../images/06.png"/></span>2017韩版女装秋装新款</h2>
-									</li>
-									<li>
-										<h2><span><img src="../images/07.png"/></span>2017韩版女秋装新哈伦</h2>
-									</li>
-									<li>
-										<h2><span><img src="../images/08.png"/></span>2017韩版女装秋装新秀</h2>
-									</li>-->
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="con3-b">
-						<ul>
-							<!--<li>
-								<img src="../images/000.jpg"/>
-								<p class="price">￥106<s>￥200.0</s></p>
-								<p class="tet">立即抢购</s></p>
-							</li>-->
-						</ul>
-					</div>
-				</div>
-<!--第四部分-->
-				<div class="con4" id="step">
-					<div class="con4-top">
-						<div class="con4-top-r">
-							<ul>
-								<li><a href="#">2017秋装新品</a></li>
-								<li><a href="#">T恤</a></li>
-								<li><a href="#">毛针织衫</a></li>
-								<li><a href="#">套装</a></li>
-								<li><a href="#">裙装</a></li>
-								<li><a href="#">裤装</a></li>
-								<li><a href="#">更多&gt;</a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="con4-c">
-						<div class="con4-c-l">
-							<img src="{% static 'images/zhongnianqun.png' %}">
-							<span>连衣裙专区<i>&gt;</i></span>
-							<ul>
-								<li><a href="#">T恤</a></li>
-								<li><a href="#">衬衫</a></li>
-								<li><a href="#">裤装</a></li>
-								<li><a href="#">裙装</a></li>
-								<li><a href="#">短外套</a></li>
-								<li><a href="#">毛针织衫</a></li>
-								<li><a href="#">套装</a></li>
-								<li><a href="#">风衣</a></li>
+                    </ul>
+                </div>
+                <div class="con3-c-c"><a href="#"><img src="{% static 'images/banner2.jpg' %}"></a></div>
+                <div class="con3-c-r">
+                    <div class="con3-pic">
+                        <a href="#"><img src="{% static 'images/tx.jpg' %}"></a>
+                        <a href="#"><img src="{% static 'images/wy.jpg' %}"></a>
+                    </div>
+                    <div class="con3-hot">
+                        <p>热销排行榜</p>
+                        <ul>
+                            <li>
+                                <h2><span><img src="static/images/01.png"/></span>2017韩版女夏装新款显</h2>
+                                <div class="hot">
+                                    <img src="static/images/007.jpg"/>
+                                    <div class="hotlist">
+                                        <div class="hotlist1">2017韩版女夏装新款显</div>
+                                        <div class="hotlist2">￥158.00</div>
+                                        <div class="hotlist3">￥328.00</div>
+                                        <div class="hotlist4">已售出<i>6666</i>笔</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <h2><span><img src="static/images/02.png"/></span>2017韩版女夏装新款宽</h2>
+                            </li>
+                            <li>
+                                <h2><span><img src="static/images/03.png"/></span>2017韩版女夏装新款网</h2>
+                            </li>
+                            <li>
+                                <h2><span><img src="static/images/04.png"/></span>2017秋装韩版百搭上衣</h2>
+                            </li>
+                            <li>
+                                <h2><span><img src="static/images/05.png"/></span>2017秋装韩版女装系带</h2>
+                            </li>
+                            <li>
+                                <h2><span><img src="static/images/06.png"/></span>2017韩版女装秋装新款</h2>
+                            </li>
+                            <li>
+                                <h2><span><img src="static/images/07.png"/></span>2017韩版女秋装新哈伦</h2>
+                            </li>
+                            <li>
+                                <h2><span><img src="static/images/08.png"/></span>2017韩版女装秋装新秀</h2>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+{#            <div class="con3-b">#}
+{#                <ul>#}
+{#                    <li>#}
+{#                        <img src="static/images/000.jpg"/>#}
+{#                        <p class="price">￥106<s>￥200.0</s></p>#}
+{#                        <p class="tet">立即抢购</p>#}
+{#                    </li>#}
+{#                </ul>#}
+{#            </div>#}
+        </div>
+        <!--第四部分-->
+        <div class="con4" id="step">
+            <div class="con4-top">
+                <div class="con4-top-r">
+                    <ul>
+                        <li><a href="#">2017秋装新品</a></li>
+                        <li><a href="#">T恤</a></li>
+                        <li><a href="#">毛针织衫</a></li>
+                        <li><a href="#">套装</a></li>
+                        <li><a href="#">裙装</a></li>
+                        <li><a href="#">裤装</a></li>
+                        <li><a href="#">更多&gt;</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="con4-c">
+                <div class="con4-c-l">
+                    <img src="{% static 'images/zhongnianqun.png' %}">
+                    <span>连衣裙专区<i>&gt;</i></span>
+                    <ul>
+                        <li><a href="#">T恤</a></li>
+                        <li><a href="#">衬衫</a></li>
+                        <li><a href="#">裤装</a></li>
+                        <li><a href="#">裙装</a></li>
+                        <li><a href="#">短外套</a></li>
+                        <li><a href="#">毛针织衫</a></li>
+                        <li><a href="#">套装</a></li>
+                        <li><a href="#">风衣</a></li>
 
-							</ul>
-						</div>
-						<div class="con4-c-c"><a href="#"><img src="{% static 'images/banner22.jpg' %}"></a></div>
+                    </ul>
+                </div>
+                <div class="con4-c-c"><a href="#"><img src="{% static 'images/banner22.jpg' %}"></a></div>
 
-						<div class="con4-pic">
-								<a href="#"><img src="{% static 'images/1503997358699198092.png' %}"></a>
-								<a href="#"><img src="{% static 'images/1503997399906040366.png' %}"></a>
-						</div>
+                <div class="con4-pic">
+                    <a href="#"><img src="{% static 'images/1503997358699198092.png' %}"></a>
+                    <a href="#"><img src="{% static 'images/1503997399906040366.png' %}"></a>
+                </div>
 
-					</div>
-					<div class="con4-b">
-						<ul>
-							<!--<li>
-								<img src="../images/000.jpg"/>
-								<p class="price">￥106<s>￥200.0</s></p>
-								<p class="tet">立即抢购</s></p>
-							</li>-->
-						</ul>
-					</div>
-				</div>
-<!--第五部分-->
-                <div class="con5" id="step">
-					<div class="con5-top">
-						<div class="con5-top-r">
-							<ul>
-								<li><a href="#">衬衫</a></li>
-								<li><a href="#">裙装</a></li>
-								<li><a href="#">套装</a></li>
-								<li><a href="#">裤装</a></li>
-								<li><a href="#">T恤</a></li>
-								<li><a href="#">更多&gt;</a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="con5-c">
-						<div class="con5-c-l">
-							<img src="{% static 'images/1503997726594332397.png' %}">
-							<span>新品主义<i>&gt;</i></span>
-							<ul>
-								<li><a href="#">裙装</a></li>
-								<li><a href="#">裤装</a></li>
-								<li><a href="#">短外套</a></li>
-								<li><a href="#">T恤</a></li>
-								<li><a href="#">卫衣/绒衫</a></li>
-							</ul>
-						</div>
-						<div class="con5-c-c"><a href="#"><img src="{% static 'images/banner33.jpg' %}"></a></div>
+            </div>
+            <div class="con4-b">
+                <ul>
+                    <!--<li>
+                        <img src="../images/000.jpg"/>
+                        <p class="price">￥106<s>￥200.0</s></p>
+                        <p class="tet">立即抢购</s></p>
+                    </li>-->
+                </ul>
+            </div>
+        </div>
+        <!--第五部分-->
+        <div class="con5" id="step">
+            <div class="con5-top">
+                <div class="con5-top-r">
+                    <ul>
+                        <li><a href="#">衬衫</a></li>
+                        <li><a href="#">裙装</a></li>
+                        <li><a href="#">套装</a></li>
+                        <li><a href="#">裤装</a></li>
+                        <li><a href="#">T恤</a></li>
+                        <li><a href="#">更多&gt;</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="con5-c">
+                <div class="con5-c-l">
+                    <img src="{% static 'images/1503997726594332397.png' %}">
+                    <span>新品主义<i>&gt;</i></span>
+                    <ul>
+                        <li><a href="#">裙装</a></li>
+                        <li><a href="#">裤装</a></li>
+                        <li><a href="#">短外套</a></li>
+                        <li><a href="#">T恤</a></li>
+                        <li><a href="#">卫衣/绒衫</a></li>
+                    </ul>
+                </div>
+                <div class="con5-c-c"><a href="#"><img src="{% static 'images/banner33.jpg' %}"></a></div>
 
-						<div class="con5-pic">
-								<a href="#"><img src="{% static 'images/1503997801541319636.jpg' %}"></a>
-								<a href="#"><img src="{% static 'images/1503997820605892198.png' %}"></a>
-								<a href="#"><img src="{% static 'images/1503997833870065285.jpg' %}"></a>
-						</div>
+                <div class="con5-pic">
+                    <a href="#"><img src="{% static 'images/1503997801541319636.jpg' %}"></a>
+                    <a href="#"><img src="{% static 'images/1503997820605892198.png' %}"></a>
+                    <a href="#"><img src="{% static 'images/1503997833870065285.jpg' %}"></a>
+                </div>
 
-					</div>
-					<div class="con5-b">
-						<ul>
-							<!--<li>
-								<img src="../images/000.jpg"/>
-								<p class="price">￥106<s>￥200.0</s></p>
-								<p class="tet">立即抢购</s></p>
-							</li>-->
-						</ul>
-					</div>
-				</div>
-<!--第六部分-->
-                <div class="con6" id="step">
-					<div class="con6-top">
-						<div class="con6-top-r">
-							<ul>
-								<li><a href="#">婴幼童</a></li>
-								<li><a href="#">T恤</a></li>
-								<li><a href="#">衬衫</a></li>
-								<li><a href="#">套装</a></li>
-								<li><a href="#">裙装</a></li>
-								<li><a href="#">卫衣/绒衫</a></li>
-								<li><a href="#">裤装</a></li>
-								<li><a href="#">更多&gt;</a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="con6-c">
-						<div class="con6-c-l">
-							<img src="{% static 'images/1503997878607791892.png' %}">
-							<span>新品6折发售<i>&gt;</i></span>
-							<ul>
-								<li><a href="#">卫衣/绒衫</a></li>
-								<li><a href="#">牛仔裤</a></li>
-								<li><a href="#">套装</a></li>
-								<li><a href="#">衬衫</a></li>
-								<li><a href="#">外套/夹克/大衣</a></li>
-								<li><a href="#">T恤</a></li>
-								<li><a href="#">连衣裙</a></li>
-								<li><a href="#">毛衣/针织衫</a></li>
-								<li><a href="#">打底裤</a></li>
-								<li><a href="#">半身裙</a></li>
-								<li><a href="#">休闲裤</a></li>
-								<li><a href="#">马甲</a></li>
-							</ul>
-						</div>
-						<div class="con6-c-c"><a href="#"><img src="{% static 'images/banner44.jpg' %}"></a></div>
+            </div>
+            <div class="con5-b">
+                <ul>
+                    <!--<li>
+                        <img src="../images/000.jpg"/>
+                        <p class="price">￥106<s>￥200.0</s></p>
+                        <p class="tet">立即抢购</s></p>
+                    </li>-->
+                </ul>
+            </div>
+        </div>
+        <!--第六部分-->
+        <div class="con6" id="step">
+            <div class="con6-top">
+                <div class="con6-top-r">
+                    <ul>
+                        <li><a href="#">婴幼童</a></li>
+                        <li><a href="#">T恤</a></li>
+                        <li><a href="#">衬衫</a></li>
+                        <li><a href="#">套装</a></li>
+                        <li><a href="#">裙装</a></li>
+                        <li><a href="#">卫衣/绒衫</a></li>
+                        <li><a href="#">裤装</a></li>
+                        <li><a href="#">更多&gt;</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="con6-c">
+                <div class="con6-c-l">
+                    <img src="{% static 'images/1503997878607791892.png' %}">
+                    <span>新品6折发售<i>&gt;</i></span>
+                    <ul>
+                        <li><a href="#">卫衣/绒衫</a></li>
+                        <li><a href="#">牛仔裤</a></li>
+                        <li><a href="#">套装</a></li>
+                        <li><a href="#">衬衫</a></li>
+                        <li><a href="#">外套/夹克/大衣</a></li>
+                        <li><a href="#">T恤</a></li>
+                        <li><a href="#">连衣裙</a></li>
+                        <li><a href="#">毛衣/针织衫</a></li>
+                        <li><a href="#">打底裤</a></li>
+                        <li><a href="#">半身裙</a></li>
+                        <li><a href="#">休闲裤</a></li>
+                        <li><a href="#">马甲</a></li>
+                    </ul>
+                </div>
+                <div class="con6-c-c"><a href="#"><img src="{% static 'images/banner44.jpg' %}"></a></div>
 
-						<div class="con6-pic">
-								<a href="#"><img src="{% static 'images/1503997975843353491.png' %}"></a>
-								<a href="#"><img src="{% static 'images/1503997995727572221.png' %}"></a>
-						</div>
+                <div class="con6-pic">
+                    <a href="#"><img src="{% static 'images/1503997975843353491.png' %}"></a>
+                    <a href="#"><img src="{% static 'images/1503997995727572221.png' %}"></a>
+                </div>
 
-					</div>
-					<div class="con6-b">
-						<ul>
-							<!--<li>
-								<img src="../images/000.jpg"/>
-								<p class="price">￥106<s>￥200.0</s></p>
-								<p class="tet">立即抢购</s></p>
-							</li>-->
-						</ul>
-					</div>
-				</div>
-<!--第七部分商品-->
-				<div class="con7" id="step">
-					<div class="con7-top">
-						<div class="con7-top-r">
-							<ul>
-								<li><a href="#">T恤</a></li>
-								<li><a href="#">衬衫</a></li>
-								<li><a href="#">蕾丝雪纺</a></li>
-								<li><a href="#">连衣裙</a></li>
-								<li><a href="#">连衣裙</a></li>
-								<li><a href="#">裤装</a></li>
-								<li><a href="#">更多&gt;</a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="con7-c" id="step">
-						<div class="con7-c-l">
-							<img src="{% static 'images/1503998209836603598.png' %}">
-							<span>出游正当季 新品起航<i>&gt;</i></span>
-							<ul>
-								<li><a href="#">毛针织衫</a></li>
-								<li><a href="#">连衣裙</a></li>
-								<li><a href="#">卫衣/绒衫</a></li>
-								<li><a href="#">休闲裤</a></li>
-								<li><a href="#">T恤</a></li>
-								<li><a href="#">衬衫</a></li>
-								<li><a href="#">蕾丝衫/雪纺衫</a></li>
-								<li><a href="#">休闲外套</a></li>
-							</ul>
-						</div>
-						<div class="con7-c-c"><a href="#"><img src="{% static 'images/banner55.jpg' %}"></a></div>
+            </div>
+            <div class="con6-b">
+                <ul>
+                    <!--<li>
+                        <img src="../images/000.jpg"/>
+                        <p class="price">￥106<s>￥200.0</s></p>
+                        <p class="tet">立即抢购</s></p>
+                    </li>-->
+                </ul>
+            </div>
+        </div>
+        <!--第七部分商品-->
+        <div class="con7" id="step">
+            <div class="con7-top">
+                <div class="con7-top-r">
+                    <ul>
+                        <li><a href="#">T恤</a></li>
+                        <li><a href="#">衬衫</a></li>
+                        <li><a href="#">蕾丝雪纺</a></li>
+                        <li><a href="#">连衣裙</a></li>
+                        <li><a href="#">连衣裙</a></li>
+                        <li><a href="#">裤装</a></li>
+                        <li><a href="#">更多&gt;</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="con7-c" id="step">
+                <div class="con7-c-l">
+                    <img src="{% static 'images/1503998209836603598.png' %}">
+                    <span>出游正当季 新品起航<i>&gt;</i></span>
+                    <ul>
+                        <li><a href="#">毛针织衫</a></li>
+                        <li><a href="#">连衣裙</a></li>
+                        <li><a href="#">卫衣/绒衫</a></li>
+                        <li><a href="#">休闲裤</a></li>
+                        <li><a href="#">T恤</a></li>
+                        <li><a href="#">衬衫</a></li>
+                        <li><a href="#">蕾丝衫/雪纺衫</a></li>
+                        <li><a href="#">休闲外套</a></li>
+                    </ul>
+                </div>
+                <div class="con7-c-c"><a href="#"><img src="{% static 'images/banner55.jpg' %}"></a></div>
 
-						<div class="con7-pic">
-								<a href="#"><img src="{% static 'images/1503998144894280297.png' %}"></a>
-						</div>
+                <div class="con7-pic">
+                    <a href="#"><img src="{% static 'images/1503998144894280297.png' %}"></a>
+                </div>
 
-					</div>
-					<div class="con7-b">
-						<ul>
-							<!--<li>
-								<img src="../images/000.jpg"/>
-								<p class="price">￥106<s>￥200.0</s></p>
-								<p class="tet">立即抢购</s></p>
-							</li>-->
-						</ul>
-					</div>
-				</div>
-<!--bigbanner图-->
-				<div class="bigbanner"><img src="{% static 'images/bigbanner.jpg' %}"></div>
-<!--资讯news-->
-				<div class="news">
-					<div class="newstop">
-						<p>韩都资讯</p>
-						<a href="#">更多&gt;</a>
-					</div>
-					<div class="newspic">
-						<img src="{% static 'images/1469676232889773651.jpg' %}">
-						<span></span>
-					    <div class="txt1">【韩都公益】无穷花开</div>
-					</div>
-					<div class="newstxt">
-						<p>时尚最新鲜</p>
-						<ul class="newstxt1">
-							<li>
-								<h3>在韩国首创时尚大赛，韩都衣舍又创...</h3>
-								<a href="#">3月12日，韩都衣舍2016韩国时尚设计师大赛成功举办，在到场的200多位重量级嘉宾</a>
-							</li>
-							<li>
-								<h3>韩都衣舍跨界玩转模特大赛牵手佳丽...</h3>
-								<a href="">在继电商节618狂欢、韩国直播和十周年庆典后，韩都 衣舍出现在了瑞丽模特大赛的赛</a>
-							</li>
-						</ul>
-						<ul class="newstxt2">
-							<li><a href="#">韩都衣舍携手J-ONE PARTNERS,演绎中韩</a></li>
-							<li><a href="#">韩都衣舍搭手韩国户外第一品牌 打通电</a></li>
-						</ul>
-						<div class="chaoliu">
-							<img src="{% static 'images/handu.jpg' %}">
-						</div>
-					</div>
-					<div class="ewm">
-						<img src="{% static 'images/ewm2.png' %}">
-						<input type="text" class="ewmtxt"><input type="button" value="马上订阅" class="ewmtxt1">
-					</div>
-				</div>
-				<div class="guide">
-					<div class="guide1">
-						<p></p>
-						<ul>
-							<li><a href="#">用户注册</a></li>
-							<li><a href="#">购物流程</a></li>
-							<li><a href="#">网站导航</a></li>
-							<li><a href="#">帮助中心</a></li>
-					    </ul>
-				    </div>
-				    <div class="guide1">
-						<p></p>
-						<ul>
-							<li><a href="#">在线支付</a></li>
-							<li><a href="#">扫码支付</a></li>
-							<li><a href="#">优惠券支付</a></li>
-					    </ul>
-				    </div>
-				    <div class="guide1">
-						<p></p>
-						<ul>
-							<li><a href="#">配送说明</a></li>
-							<li><a href="#">运费说明</a></li>
-							<li><a href="#">验货签收</a></li>
-					    </ul>
-				    </div>
-				    <div class="guide1">
-						<p></p>
-						<ul>
-							<li><a href="#">退换货政策</a></li>
-							<li><a href="#">退换货流程</a></li>
-					    </ul>
-				    </div>
-				    <div class="guide1">
-						<p></p>
-						<ul>
-							<li><a href="#">会员制度</a></li>
-							<li><a href="#">会员积分</a></li>
-					    </ul>
-				    </div>
-				     <div class="guide1">
-						<p></p>
-						<ul>
-							<li><a href="#">品牌故事</a></li>
-							<li><a href="#">媒体报道</a></li>
-							<li><a href="#">诚聘英才</a></li>
-							<li><a href="#">练习我们</a></li>
-					    </ul>
-				    </div>
-				</div>
-				<div class="footimg">
-					<img src="{% static 'images/icon4.png' %}">
-				</div>
-				<div class="foot">
-					<ul>
-						<li><a href="#">首页</a></li>
-						<li><a href="#">品牌故事</a></li>
-						<li><a href="#">诚聘英才</a></li>
-						<li><a href="#">媒体报道</a></li>
-						<li><a href="#">联系我们</a></li>
-						<li><a href="#">网站地图</a></li>
-						<li><a href="#">友情链接</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-    </body>
+            </div>
+            <div class="con7-b">
+                <ul>
+                    <!--<li>
+                        <img src="../images/000.jpg"/>
+                        <p class="price">￥106<s>￥200.0</s></p>
+                        <p class="tet">立即抢购</s></p>
+                    </li>-->
+                </ul>
+            </div>
+        </div>
+        <!--bigbanner图-->
+        <div class="bigbanner"><img src="{% static 'images/bigbanner.jpg' %}"></div>
+        <!--资讯news-->
+        <div class="news">
+            <div class="newstop">
+                <p>韩都资讯</p>
+                <a href="#">更多&gt;</a>
+            </div>
+            <div class="newspic">
+                <img src="{% static 'images/1469676232889773651.jpg' %}">
+                <span></span>
+                <div class="txt1">【韩都公益】无穷花开</div>
+            </div>
+            <div class="newstxt">
+                <p>时尚最新鲜</p>
+                <ul class="newstxt1">
+                    <li>
+                        <h3>在韩国首创时尚大赛，韩都衣舍又创...</h3>
+                        <a href="#">3月12日，韩都衣舍2016韩国时尚设计师大赛成功举办，在到场的200多位重量级嘉宾</a>
+                    </li>
+                    <li>
+                        <h3>韩都衣舍跨界玩转模特大赛牵手佳丽...</h3>
+                        <a href="">在继电商节618狂欢、韩国直播和十周年庆典后，韩都 衣舍出现在了瑞丽模特大赛的赛</a>
+                    </li>
+                </ul>
+                <ul class="newstxt2">
+                    <li><a href="#">韩都衣舍携手J-ONE PARTNERS,演绎中韩</a></li>
+                    <li><a href="#">韩都衣舍搭手韩国户外第一品牌 打通电</a></li>
+                </ul>
+                <div class="chaoliu">
+                    <img src="{% static 'images/handu.jpg' %}">
+                </div>
+            </div>
+            <div class="ewm">
+                <img src="{% static 'images/ewm2.png' %}">
+                <input type="text" class="ewmtxt"><input type="button" value="马上订阅" class="ewmtxt1">
+            </div>
+        </div>
+        <div class="guide">
+            <div class="guide1">
+                <p></p>
+                <ul>
+                    <li><a href="#">用户注册</a></li>
+                    <li><a href="#">购物流程</a></li>
+                    <li><a href="#">网站导航</a></li>
+                    <li><a href="#">帮助中心</a></li>
+                </ul>
+            </div>
+            <div class="guide1">
+                <p></p>
+                <ul>
+                    <li><a href="#">在线支付</a></li>
+                    <li><a href="#">扫码支付</a></li>
+                    <li><a href="#">优惠券支付</a></li>
+                </ul>
+            </div>
+            <div class="guide1">
+                <p></p>
+                <ul>
+                    <li><a href="#">配送说明</a></li>
+                    <li><a href="#">运费说明</a></li>
+                    <li><a href="#">验货签收</a></li>
+                </ul>
+            </div>
+            <div class="guide1">
+                <p></p>
+                <ul>
+                    <li><a href="#">退换货政策</a></li>
+                    <li><a href="#">退换货流程</a></li>
+                </ul>
+            </div>
+            <div class="guide1">
+                <p></p>
+                <ul>
+                    <li><a href="#">会员制度</a></li>
+                    <li><a href="#">会员积分</a></li>
+                </ul>
+            </div>
+            <div class="guide1">
+                <p></p>
+                <ul>
+                    <li><a href="#">品牌故事</a></li>
+                    <li><a href="#">媒体报道</a></li>
+                    <li><a href="#">诚聘英才</a></li>
+                    <li><a href="#">练习我们</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footimg">
+            <img src="{% static 'images/icon4.png' %}">
+        </div>
+        <div class="foot">
+            <ul>
+                <li><a href="#">首页</a></li>
+                <li><a href="#">品牌故事</a></li>
+                <li><a href="#">诚聘英才</a></li>
+                <li><a href="#">媒体报道</a></li>
+                <li><a href="#">联系我们</a></li>
+                <li><a href="#">网站地图</a></li>
+                <li><a href="#">友情链接</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
 </html>
