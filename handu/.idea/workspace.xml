@@ -466,19 +466,11 @@
       <change beforePath="$PROJECT_DIR$/../../handu/templates/handu Group.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../handu/templates/lander.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../handu/templates/register.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/3d22d478-5182-419a-8bf3-94d2457c87e3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8c9e517a-4574-497e-a5f9-a4a7ca835e26.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/8c9e517a-4574-497e-a5f9-a4a7ca835e26.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/handu/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/handu/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/handu/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/handu/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/handu/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/handu/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/handuapp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/handuapp/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/handuapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/handuapp/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/css/index/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/index/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/handu Group.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/handu Group.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -525,26 +517,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/handu Group.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="698" column="33" selection-start-line="698" selection-start-column="33" selection-end-line="698" selection-end-column="33" />
+            <state relative-caret-position="301">
+              <caret line="936" column="18" lean-forward="true" selection-start-line="936" selection-start-column="18" selection-end-line="936" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/js/index.js">
+        <entry file="file://$PROJECT_DIR$/handuapp/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="10" column="33" lean-forward="true" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/css/index/index.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5958">
-              <caret line="666" column="44" lean-forward="true" selection-start-line="666" selection-start-column="44" selection-end-line="666" selection-end-column="44" />
+            <state relative-caret-position="122">
+              <caret line="24" column="58" lean-forward="true" selection-start-line="24" selection-start-column="58" selection-end-line="24" selection-end-column="58" />
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -557,8 +543,10 @@
       <find>bann</find>
       <find>sort</find>
       <find>sor</find>
-      <find>con3-b</find>
       <find>热销</find>
+      <find>106</find>
+      <find>con4</find>
+      <find>con3-b</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -571,11 +559,13 @@
         <option value="$PROJECT_DIR$/handuapp/urls.py" />
         <option value="$PROJECT_DIR$/handu/__init__.py" />
         <option value="$PROJECT_DIR$/handu/settings.py" />
-        <option value="$PROJECT_DIR$/handuapp/models.py" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/8c9e517a-4574-497e-a5f9-a4a7ca835e26/console.sql" />
-        <option value="$PROJECT_DIR$/handuapp/views.py" />
-        <option value="$PROJECT_DIR$/static/css/index/index.css" />
         <option value="$PROJECT_DIR$/static/js/index.js" />
+        <option value="$PROJECT_DIR$/static/css/index/index.css" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/8c9e517a-4574-497e-a5f9-a4a7ca835e26/console_1.sql" />
+        <option value="$PROJECT_DIR$/handuapp/models.py" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/8c9e517a-4574-497e-a5f9-a4a7ca835e26/console_2.sql" />
+        <option value="$PROJECT_DIR$/handuapp/views.py" />
         <option value="$PROJECT_DIR$/templates/handu Group.html" />
       </list>
     </option>
@@ -610,25 +600,6 @@
               <item name="handu" type="b2602c69:ProjectViewProjectNode" />
               <item name="handu" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="handu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="handu" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="handu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="handu" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-              <item name="index" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="handu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="handu" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="json" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="handu" type="b2602c69:ProjectViewProjectNode" />
@@ -703,12 +674,12 @@
       <option name="presentableId" value="Default" />
       <updated>1547119865981</updated>
       <workItem from="1547119871054" duration="12226000" />
-      <workItem from="1547197933901" duration="13727000" />
+      <workItem from="1547197933901" duration="20434000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17323000" />
+    <option name="totallyTimeSpent" value="24030000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -723,10 +694,10 @@
     <frame x="49" y="-4" width="1313" height="620" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1715415" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17549407" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Database Console" weight="0.5914634" />
+      <window_info anchor="bottom" id="Database Console" weight="0.4207317" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -738,13 +709,13 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50039524" side_tool="true" weight="0.3292683" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.14227642" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.2987805" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.3292683" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" />
-      <window_info anchor="right" id="Database" order="4" weight="0.21581028" />
+      <window_info anchor="right" id="Database" order="4" visible="true" weight="0.18498024" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -831,13 +802,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/handuapp/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="43" lean-forward="true" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/8c9e517a-4574-497e-a5f9-a4a7ca835e26/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -848,62 +812,119 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/static/json/list5.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="30" column="8" lean-forward="true" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-360">
+          <caret line="10" column="33" lean-forward="true" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/json/hot.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="30" column="17" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://8c9e517a-4574-497e-a5f9-a4a7ca835e26/schema/hddb/table/handuapp_hot">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/8c9e517a-4574-497e-a5f9-a4a7ca835e26/console_1.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="95" selection-start-line="2" selection-start-column="95" selection-end-line="2" selection-end-column="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/json/list.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/index/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="666" column="57" selection-start-line="666" selection-start-column="57" selection-end-line="666" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://8c9e517a-4574-497e-a5f9-a4a7ca835e26/schema/hddb/table/auth_group">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://8c9e517a-4574-497e-a5f9-a4a7ca835e26/schema/hddb/table/auth_group_permissions">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/handuapp/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="38" column="43" lean-forward="true" selection-start-line="38" selection-start-column="43" selection-end-line="38" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/json/list2.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="23" lean-forward="true" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://8c9e517a-4574-497e-a5f9-a4a7ca835e26/schema/hddb/table/handuapp_list2">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/8c9e517a-4574-497e-a5f9-a4a7ca835e26/console_2.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/json/list4.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-540" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/json/list3.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/handuapp/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="31" lean-forward="true" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+        <state relative-caret-position="122">
+          <caret line="24" column="58" lean-forward="true" selection-start-line="24" selection-start-column="58" selection-end-line="24" selection-end-column="58" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/index/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5958">
-          <caret line="666" column="44" lean-forward="true" selection-start-line="666" selection-start-column="44" selection-end-line="666" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="10" column="33" lean-forward="true" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/json/list.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/json/hot.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/json/list5.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="35" column="19" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/json/list4.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/json/list3.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-54" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/json/list2.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-191">
-          <caret column="1" selection-start-column="1" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/handu Group.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="698" column="33" selection-start-line="698" selection-start-column="33" selection-end-line="698" selection-end-column="33" />
+        <state relative-caret-position="301">
+          <caret line="936" column="18" lean-forward="true" selection-start-line="936" selection-start-column="18" selection-end-line="936" selection-end-column="18" />
         </state>
       </provider>
     </entry>

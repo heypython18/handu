@@ -664,7 +664,7 @@
 }
 .con3-b ul li{
 	width: 223px; height: 290px; float: left; text-align: center;
-	margin-right: 20px; margin-bottom: 18px;
+	margin-right: 20px; margin-bottom: 18px;float: right;
 }
 .con3-b ul li:nth-child(5n){
 	margin-right: 0;

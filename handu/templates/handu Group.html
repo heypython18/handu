@@ -722,15 +722,17 @@
                     </div>
                 </div>
             </div>
-{#            <div class="con3-b">#}
-{#                <ul>#}
-{#                    <li>#}
-{#                        <img src="static/images/000.jpg"/>#}
-{#                        <p class="price">￥106<s>￥200.0</s></p>#}
-{#                        <p class="tet">立即抢购</p>#}
-{#                    </li>#}
-{#                </ul>#}
-{#            </div>#}
+            <div class="con3-b">
+                <ul>
+                    {% for lis in hot %}
+                         <li>
+                            <img src="{{ lis.wimg }}"/>
+                            <p class="price">{{ lis.price }}<s>{{ lis.unit }}</s></p>
+                            <p class="tet">立即抢购</p>
+                         </li>
+                    {% endfor %}
+                </ul>
+            </div>
         </div>
         <!--第四部分-->
         <div class="con4" id="step">
@@ -773,11 +775,13 @@
             </div>
             <div class="con4-b">
                 <ul>
-                    <!--<li>
-                        <img src="../images/000.jpg"/>
-                        <p class="price">￥106<s>￥200.0</s></p>
-                        <p class="tet">立即抢购</s></p>
-                    </li>-->
+                    {% for lis in list2 %}
+                         <li>
+                            <img src="{{ lis.himg }}"/>
+                            <p class="price">{{ lis.price }}<s>{{ lis.unit }}</s></p>
+                            <p class="tet">立即抢购</p>
+                         </li>
+                    {% endfor %}
                 </ul>
             </div>
         </div>
@@ -818,11 +822,13 @@
             </div>
             <div class="con5-b">
                 <ul>
-                    <!--<li>
-                        <img src="../images/000.jpg"/>
-                        <p class="price">￥106<s>￥200.0</s></p>
-                        <p class="tet">立即抢购</s></p>
-                    </li>-->
+                    {% for lis in list3 %}
+                         <li>
+                            <img src="{{ lis.himg }}"/>
+                            <p class="price">{{ lis.price }}<s>{{ lis.unit }}</s></p>
+                            <p class="tet">立即抢购</p>
+                         </li>
+                    {% endfor %}
                 </ul>
             </div>
         </div>
@@ -871,11 +877,13 @@
             </div>
             <div class="con6-b">
                 <ul>
-                    <!--<li>
-                        <img src="../images/000.jpg"/>
-                        <p class="price">￥106<s>￥200.0</s></p>
-                        <p class="tet">立即抢购</s></p>
-                    </li>-->
+                   {% for lis in list4 %}
+                         <li>
+                            <img src="{{ lis.himg }}"/>
+                            <p class="price">{{ lis.price }}<s>{{ lis.unit }}</s></p>
+                            <p class="tet">立即抢购</p>
+                         </li>
+                    {% endfor %}
                 </ul>
             </div>
         </div>
@@ -918,11 +926,13 @@
             </div>
             <div class="con7-b">
                 <ul>
-                    <!--<li>
-                        <img src="../images/000.jpg"/>
-                        <p class="price">￥106<s>￥200.0</s></p>
-                        <p class="tet">立即抢购</s></p>
-                    </li>-->
+                    {% for lis in list5 %}
+                         <li>
+                            <img src="{{ lis.himg }}"/>
+                            <p class="price">{{ lis.price }}<s>{{ lis.unit }}</s></p>
+                            <p class="tet">立即抢购</p>
+                         </li>
+                    {% endfor %}
                 </ul>
             </div>
         </div>
