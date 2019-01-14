@@ -1,19 +1,20 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
-		<link rel="stylesheet" type="text/css" href="../css/index/cart.css"/>
-		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
-		<script src ="../js/jquery-1.12.3.js"></script>
-		<script src ="../js/move.js"></script>
-		<script src="../js/cart.js"></script>
-		<script src="../js/jquery.cookie.js"></script>
+		<link rel="stylesheet" type="text/css" href="{% static 'css/index/cart.css' %}"/>
+		<link rel="stylesheet" type="text/css" href="{% static 'css/reset.css' %}"/>
+		<script src ="{% static 'js/jquery-1.12.3.js' %}"></script>
+		<script src ="{% static 'js/move.js' %}"></script>
+		<script src="{% static 'js/cart.js' %}"></script>
+		<script src="{% static 'js/jquery.cookie.js' %}"></script>
 	</head>
 	<body>
 		<div class = "top">
 			<div class ="top-l">
-				<p>返回首页</p>
+				<p><a href="{% url 'handuapp:handugroup' %}">返回首页</a></p>
 				<span>收藏网站</span>
 			</div>
 			<div class="top-r">
@@ -144,15 +145,15 @@
 						<p></p>
 						<ul>
 							<li><a href="#">在线支付</a></li>
-							<li><a href="#">扫码支付</a></a></li>
+							<li><a href="#">扫码支付</a></li>
 							<li><a href="#">优惠券支付</a></li>
 					    </ul>
 				    </div>
 				    <div class="guide1">
 						<p></p>
 						<ul>
-							<li><a href="#">配送说明</a></a></li>
-							<li><a href="#">运费说明</a></a></li>
+							<li><a href="#">配送说明</a></li>
+							<li><a href="#">运费说明</a></li>
 							<li><a href="#">验货签收</a></li>
 					    </ul>
 				    </div>
@@ -181,7 +182,7 @@
 				    </div>
 				</div>
 				<div class="footimg">
-					<img src="../images/icon4.png" />
+					<img src="{% static 'images/icon4.png' %}" />
 				</div>
 				<div class="foot">
 					<ul>

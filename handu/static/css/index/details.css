@@ -353,7 +353,7 @@
 	float:left; width: 1000px; height: 690px; border: 1px solid #f5f3f0;
 }
 .con2-r-l{
-	width: 480px; 690px; float:left; border-right: 1px solid #f5f3f0;
+	width: 480px; height: 690px; float:left; border-right: 1px solid #f5f3f0;
 	position:relative;
 }
 .con2-midImg{
@@ -365,7 +365,7 @@
 }
 .con2-midImg .smallArea{
 	width:210px; height: 210px; background: rgba(200,180,160,0.5);
-	position:absolute; left:0px; top:0px;
+	position:absolute; left:0px; top:0px;display: none;
 }
 .con2-smallimg{
 	width: 480px; height: 95px; border-bottom: 1px solid #f5f3f0;

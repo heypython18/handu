@@ -12,6 +12,9 @@
 	padding-left:40px; height:29px; line-height: 29px;
 	display: inline-block;
 }
+.top-l p a{
+	font-size:12px; color:#ff0033;
+}
 .top-l span{
 	font-size:12px; color:#565656; 
 	padding-left: 21px; height:29px; line-height: 29px;

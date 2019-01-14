@@ -16,15 +16,15 @@
 
 <div class="top">
     <div class="top-l">
-        <p><a href="#">返回首页</a></p>
+        <p><a href="{% url 'handuapp:handugroup' %}">返回首页</a></p>
         <span>收藏网站</span>
     </div>
     <div class="top-r">
         <p>您好，欢迎光临韩都衣舍！</p>
         <ul>
-            <li><a href="lander.html">登陆</a></li>
-            <li><a href="register.html">注册</a></li>
-            <li><a href="#">购物车</a></li>
+            <li><a href="{% url 'handuapp:lander' %}">登陆</a></li>
+            <li><a href="{% url  'handuapp:register' %}">注册</a></li>
+            <li><a href="{% url  'handuapp:cart' %}">购物车</a></li>
             <li><a href="#">在线客服</a></li>
             <li><a href="#">帮助中心</a></li>
             <li>
@@ -724,12 +724,14 @@
             </div>
             <div class="con3-b">
                 <ul>
-                    {% for lis in hot %}
-                         <li>
-                            <img src="{{ lis.wimg }}"/>
+                    {% for lis in list %}
+                        <a href="{% url 'handuapp:details' lis.id %}">
+                            <li>
+                            <img src="{{ lis.midimg }}"/>
                             <p class="price">{{ lis.price }}<s>{{ lis.unit }}</s></p>
                             <p class="tet">立即抢购</p>
-                         </li>
+                            </li>
+                        </a>
                     {% endfor %}
                 </ul>
             </div>
