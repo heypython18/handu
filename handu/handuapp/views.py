@@ -1,4 +1,5 @@
-from django.shortcuts import render
+from django.http import HttpResponse
+from django.shortcuts import render, redirect
 
 # Create your views here.
 from handuapp.models import HeadImg, List5, Hot, List2, List3, List4, List, User
@@ -13,6 +14,7 @@ def index(request):
     list3 = List3.objects.all()
     list4 = List4.objects.all()
     list = List.objects.all()
+    username = request.COOKIES.get('username')
 
     data = {
         'headimg':headimg,
@@ -21,21 +23,40 @@ def index(request):
         'list2':list2,
         'list3': list3,
         'list4': list4,
-        'list':list
+        'list':list,
+        'username':username
     }
 
     return render(request,'handu Group.html',context=data)
 
 
 def register(request):
-    return render(request,'register.html')
+    if request.method == 'GET':
+
+        return render(request,'register.html')
+    elif request.method == 'POST':
+        # print(request.POST)
+        user = User()
+        user.username = request.POST.get('username')
+        user.password = request.POST.get('password')
+        user.save()
+
+        response = redirect('handuapp:handugroup')
+        response.set_cookie('username',user.username)
+
+
+        return response
 
 
 def lander(request):
-    return render(request,'lander.html')
+    if request.method == 'GET':
+        return render(request,'lander.html')
+    elif request.method == 'POST':
+        return redirect('handuapp:handugroup')
 
 
 def cart(request):
+
     return render(request,'cart.html')
 
 
@@ -46,3 +67,9 @@ def details(request,listid):
 
     return render(request,'details.html',{'list':list})
 
+
+def logout(request):
+
+    response = redirect('handuapp:handugroup')
+    response.delete_cookie('username')
+    return response

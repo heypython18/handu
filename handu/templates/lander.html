@@ -381,39 +381,41 @@
             <div class="con-l">
                 <img src="{% static 'images/410-290.png' %}">
             </div>
-            <div class="con-r">
-                <div class="con-r-t">
-                    <p>用户登录</p>
-                    <ul>
-                        <li>
-                            <div class="con-txt">用户名;</div>
-                            <input type="text" placeholder="邮箱地址/手机号" class="con-inp" id="inp1">
-                        </li>
-                        <li>
-                            <div class="con-txt">密码:</div>
-                            <input type="password" class="con-inp" id="inp2">
-                        </li>
-                        <li>
-                            <div class="con-txt">验证码:</div>
-                            <input type="text" class="con-inp1" id="code_input">
-                            <div id="v_container" style="width: 86px;height: 30px; display: inline-block;">
-                                <canvas id="verifyCanvas" width="86" height="30" style="cursor: pointer;">
-                                    您的浏览器版本不支持canvas
-                                </canvas>
-                            </div>
-                        </li>
-                        <li>
-                            <input type="button" class="btn" value="立即登录">
-                            <input type="checkbox" id="check"><span>保存登录信息</span>
-                        </li>
-                        <li>
-                            <a href="http://127.0.0.1:8020/html1710/%E4%BA%8C%E9%98%B6%E6%AE%B5%E9%A1%B9%E7%9B%AE%20--%E9%9F%A9%E9%83%BD%E8%A1%A3%E8%88%8D/html/register.html">注册|</a>
-                            <a href="#">忘记密码?</a>
-                        </li>
-                    </ul>
+            <form action="{% url 'handuapp:handugroup' %}" method="post">
+                <div class="con-r">
+                    <div class="con-r-t">
+                        <p>用户登录</p>
+                        <ul>
+                            <li>
+                                <div class="con-txt">用户名;</div>
+                                <input type="text" placeholder="邮箱地址/手机号" class="con-inp" id="inp1">
+                            </li>
+                            <li>
+                                <div class="con-txt">密码:</div>
+                                <input type="password" class="con-inp" id="inp2">
+                            </li>
+{#                            <li>#}
+{#                                <div class="con-txt">验证码:</div>#}
+{#                                <input type="text" class="con-inp1" id="code_input">#}
+{#                                <div id="v_container" style="width: 86px;height: 30px; display: inline-block;">#}
+{#                                    <canvas id="verifyCanvas" width="86" height="30" style="cursor: pointer;">#}
+{#                                        您的浏览器版本不支持canvas#}
+{#                                    </canvas>#}
+{#                                </div>#}
+{#                            </li>#}
+                            <li>
+                                <input type="submit" class="btn" value="立即登录">
+                                <input type="checkbox" id="check"><span>保存登录信息</span>
+                            </li>
+                            <li>
+                                <a href="http://127.0.0.1:8020/html1710/%E4%BA%8C%E9%98%B6%E6%AE%B5%E9%A1%B9%E7%9B%AE%20--%E9%9F%A9%E9%83%BD%E8%A1%A3%E8%88%8D/html/register.html">注册|</a>
+                                <a href="#">忘记密码?</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
         </div>
+        </form>
         <div class="guide">
             <div class="guide1">
                 <p></p>

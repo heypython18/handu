@@ -385,12 +385,14 @@
 
             </div>
         </div>
-        <div class="con-r">
+        <form action="{% url 'handuapp:register' %}" method="post">
+            {% csrf_token %}
+                    <div class="con-r">
             <div class="con-r-t">
                 <div class="con-r-t-t">
                     <p>选择注册方式：</p>
                     <h2 class="active">使用手机注册</h2>
-                    <h2>使用邮箱注册</h2>
+{#                    <h2>使用邮箱注册</h2>#}
                 </div>
                 <div class="con-r-t-b">
                     <p>填写您的信息：</p>
@@ -398,8 +400,8 @@
                     <ul id="list1">
                         <li>
                             <div class="register-name">您的手机号：</div>
-                            <input class="text" type="text" id="inp1">
-                            <input type="button" class="send1" value="发送验证码">
+                            <input class="text" type="text" id="inp1" name="username">
+{#                            <input type="button" class="send1" value="发送验证码">#}
                             <img src="{% static 'images/true.gif' %}">
                             <span>手机号格式不正确</span>
                         </li>
@@ -408,13 +410,13 @@
                                 请输入您在注册时的手机号码，若当前手机号码丢失/不用，或无法接收到验证码？<a href="#">其它验证方式</a>
                             </div>
                         </li>
-                        <li>
-                            <div class="register-name">验证码：</div>
-                            <input type="text" class="text">
-                        </li>
+{#                        <li>#}
+{#                            <div class="register-name">验证码：</div>#}
+{#                            <input type="text" class="text">#}
+{#                        </li>#}
                         <li>
                             <div class="register-name">密码：</div>
-                            <input type="password" class="text" id="inp2">
+                            <input type="password" class="text" id="inp2" name="password">
                             <img src="{% static 'images/true.gif' %}">
                             <span>密码长度不能小于8位</span>
                             <i>密码必须为8-24位字母与数字组合</i>
@@ -424,12 +426,12 @@
                                 6-16位字符，可使用字母、数字或符号的组合
                             </div>
                         </li>
-                        <li>
-                            <div class="register-name">确认密码：</div>
-                            <input type="password" class="text" id="inp3">
-                            <img src="{% static 'images/true.gif' %}">
-                            <span>两次输入的密码不一致</span>
-                        </li>
+{#                        <li>#}
+{#                            <div class="register-name">确认密码：</div>#}
+{#                            <input type="password" class="text" id="inp3">#}
+{#                            <img src="{% static 'images/true.gif' %}">#}
+{#                            <span>两次输入的密码不一致</span>#}
+{#                        </li>#}
                         <li>
                             <div class="register-tishi">
                                 <input type="checkbox">
@@ -437,9 +439,10 @@
                             </div>
                         </li>
                         <li>
-                            <input type="button" class="send2" value="同意协议并注册">
+                            <input type="submit" class="send2" value="同意协议并注册">
                         </li>
                     </ul>
+        </form>
                     <!--邮箱注册-->
                     <ul id="list2">
                         <li>
