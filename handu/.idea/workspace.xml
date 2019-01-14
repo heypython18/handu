@@ -466,13 +466,11 @@
       <change beforePath="$PROJECT_DIR$/../../handu/templates/handu Group.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../handu/templates/lander.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../handu/templates/register.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/054cccd6-c9e2-45fa-8a3a-5253400107dd.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/handu/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/handu/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/handuapp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/handuapp/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/handuapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/handuapp/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/handu Group.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/handu Group.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/lander.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/lander.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/register.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -514,33 +512,24 @@
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/details.html">
+        <entry file="file://$PROJECT_DIR$/templates/lander.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7632">
-              <caret line="451" column="18" lean-forward="true" selection-start-line="451" selection-start-column="18" selection-end-line="451" selection-end-column="18" />
+            <state relative-caret-position="6894">
+              <caret line="383" column="49" selection-start-line="383" selection-start-column="49" selection-end-line="383" selection-end-column="49" />
+              <folding>
+                <element signature="n#style#0;n#P#0;n#li#2;n#ul#0;n#div#0;n#div#0;n#form#0;n#div#1;n#div#1;n#i#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/lander.html">
+        <entry file="file://$PROJECT_DIR$/static/css/index/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="101">
-              <caret line="396" column="36" lean-forward="true" selection-start-line="396" selection-start-column="36" selection-end-line="396" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/handuapp/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="155">
-              <caret line="51" selection-start-line="51" selection-end-line="51" />
-              <folding>
-                <element signature="e#0#36#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="34">
+              <caret line="19" column="6" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -548,8 +537,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/handu Group.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="26" column="60" lean-forward="true" selection-start-line="26" selection-start-column="60" selection-end-line="26" selection-end-column="60" />
+            <state relative-caret-position="198">
+              <caret line="26" column="69" lean-forward="true" selection-start-line="26" selection-start-column="69" selection-end-line="26" selection-end-column="69" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="das://8c9e517a-4574-497e-a5f9-a4a7ca835e26/schema/hddb/table/handuapp_user">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
@@ -557,8 +555,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/handuapp/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="13" column="43" lean-forward="true" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
+            <state relative-caret-position="34">
+              <caret line="13" column="43" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -612,10 +610,10 @@
         <option value="$PROJECT_DIR$/templates/details.html" />
         <option value="$PROJECT_DIR$/handu/settings.py" />
         <option value="$PROJECT_DIR$/templates/register.html" />
-        <option value="$PROJECT_DIR$/templates/handu Group.html" />
         <option value="$PROJECT_DIR$/handuapp/urls.py" />
         <option value="$PROJECT_DIR$/handuapp/views.py" />
         <option value="$PROJECT_DIR$/templates/lander.html" />
+        <option value="$PROJECT_DIR$/templates/handu Group.html" />
       </list>
     </option>
   </component>
@@ -643,17 +641,20 @@
             <path>
               <item name="handu" type="b2602c69:ProjectViewProjectNode" />
               <item name="handu" type="462c0819:PsiDirectoryNode" />
-              <item name="handu" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="handu" type="b2602c69:ProjectViewProjectNode" />
               <item name="handu" type="462c0819:PsiDirectoryNode" />
-              <item name="handuapp" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="handu" type="b2602c69:ProjectViewProjectNode" />
               <item name="handu" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="index" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -724,11 +725,12 @@
       <updated>1547119865981</updated>
       <workItem from="1547119871054" duration="12226000" />
       <workItem from="1547197933901" duration="51014000" />
+      <workItem from="1547472127372" duration="2297000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65685000" />
+    <option name="totallyTimeSpent" value="68883000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -740,10 +742,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="49" y="-4" width="1215" height="597" extended-state="6" />
+    <frame x="49" y="-4" width="1162" height="604" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.16281062" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.16247755" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -757,14 +759,14 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50039524" side_tool="true" weight="0.3292683" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.1684435" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.26890758" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.3283582" />
       <window_info anchor="bottom" id="Database Console" order="13" weight="0.4207317" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" />
-      <window_info anchor="right" id="Database" order="4" weight="0.26996198" />
+      <window_info active="true" anchor="right" id="Database" order="4" visible="true" weight="0.26929983" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -791,6 +793,20 @@
                 </list>
               </option>
             </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
           </value>
         </entry>
       </map>
@@ -964,13 +980,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/index/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="179" column="18" selection-start-line="179" selection-start-column="18" selection-end-line="179" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
@@ -1012,20 +1021,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/details.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7632">
-          <caret line="451" column="18" lean-forward="true" selection-start-line="451" selection-start-column="18" selection-end-line="451" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://8c9e517a-4574-497e-a5f9-a4a7ca835e26/schema/hddb/table/handuapp_user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/register.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -1040,37 +1035,61 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/handuapp/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="43" lean-forward="true" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/handuapp/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="51" selection-start-line="51" selection-end-line="51" />
+        <state relative-caret-position="459">
+          <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
           <folding>
             <element signature="e#0#36#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/handu Group.html">
+    <entry file="file://$PROJECT_DIR$/templates/details.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="26" column="60" lean-forward="true" selection-start-line="26" selection-start-column="60" selection-end-line="26" selection-end-column="60" />
+        <state relative-caret-position="689">
+          <caret line="451" column="18" selection-start-line="451" selection-start-column="18" selection-end-line="451" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/lander.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="396" column="36" lean-forward="true" selection-start-line="396" selection-start-column="36" selection-end-line="396" selection-end-column="36" />
+        <state relative-caret-position="6894">
+          <caret line="383" column="49" selection-start-line="383" selection-start-column="49" selection-end-line="383" selection-end-column="49" />
+          <folding>
+            <element signature="n#style#0;n#P#0;n#li#2;n#ul#0;n#div#0;n#div#0;n#form#0;n#div#1;n#div#1;n#i#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/handuapp/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="13" column="43" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://8c9e517a-4574-497e-a5f9-a4a7ca835e26/schema/hddb/table/handuapp_user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/handu Group.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="26" column="69" lean-forward="true" selection-start-line="26" selection-start-column="69" selection-end-line="26" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/index/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="19" column="6" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="6" />
         </state>
       </provider>
     </entry>

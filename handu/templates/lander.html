@@ -381,18 +381,19 @@
             <div class="con-l">
                 <img src="{% static 'images/410-290.png' %}">
             </div>
-            <form action="{% url 'handuapp:handugroup' %}" method="post">
+            <form action="{% url 'handuapp:lander' %}" method="post">
+                {% csrf_token %}
                 <div class="con-r">
                     <div class="con-r-t">
                         <p>用户登录</p>
                         <ul>
                             <li>
                                 <div class="con-txt">用户名;</div>
-                                <input type="text" placeholder="邮箱地址/手机号" class="con-inp" id="inp1">
+                                <input type="text" placeholder="邮箱地址/手机号" class="con-inp" id="inp1" name="username">
                             </li>
                             <li>
                                 <div class="con-txt">密码:</div>
-                                <input type="password" class="con-inp" id="inp2">
+                                <input type="password" class="con-inp" id="inp2" name="password">
                             </li>
 {#                            <li>#}
 {#                                <div class="con-txt">验证码:</div>#}
@@ -404,7 +405,7 @@
 {#                                </div>#}
 {#                            </li>#}
                             <li>
-                                <input type="submit" class="btn" value="立即登录">
+                                <input type="submit" class="btn" value="立即登录"><P style="color: red;">{{ err }}</P>
                                 <input type="checkbox" id="check"><span>保存登录信息</span>
                             </li>
                             <li>

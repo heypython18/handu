@@ -52,7 +52,18 @@ def lander(request):
     if request.method == 'GET':
         return render(request,'lander.html')
     elif request.method == 'POST':
-        return redirect('handuapp:handugroup')
+
+        username = request.POST.get('username')
+        password = request.POST.get('password')
+
+        users = User.objects.filter(username=username).filter(password=password)
+        if users.count():
+           response = redirect('handuapp:handugroup')
+           response.set_cookie('username',username)
+           return response
+        else:
+
+            return render(request,'lander.html',context={'err':'用户名或密码错误'})
 
 
 def cart(request):
