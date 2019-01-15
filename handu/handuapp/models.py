@@ -57,4 +57,8 @@ class List(models.Model):
 
 class User(models.Model):
     username = models.CharField(max_length=60)
-    password = models.CharField(max_length=60)
+    password = models.CharField(max_length=255)
+    token = models.CharField(max_length=255)
+
+
+

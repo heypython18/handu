@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="hddb@localhost" uuid="8c9e517a-4574-497e-a5f9-a4a7ca835e26">
+    <data-source source="LOCAL" name="handudb@localhost" uuid="85f212a8-b415-4500-8c45-74c73838bd5d">
       <driver-ref>mysql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://localhost:3306/hddb</jdbc-url>
+      <jdbc-url>jdbc:mysql://localhost:3306/handudb</jdbc-url>
       <driver-properties>
         <property name="autoReconnect" value="true" />
         <property name="zeroDateTimeBehavior" value="convertToNull" />

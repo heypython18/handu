@@ -1,3 +1,7 @@
+import hashlib
+import random
+import time
+
 from django.http import HttpResponse
 from django.shortcuts import render, redirect
 
@@ -14,7 +18,18 @@ def index(request):
     list3 = List3.objects.all()
     list4 = List4.objects.all()
     list = List.objects.all()
-    username = request.COOKIES.get('username')
+    # username = request.COOKIES.get('username')
+    # username = request.session.get('username')
+    token = request.session.get('token')
+    users = User.objects.filter(token=token)
+
+    if users.count():
+        user = users.first()
+        username = user.username
+
+    else:
+        username = None
+
 
     data = {
         'headimg':headimg,
@@ -30,6 +45,21 @@ def index(request):
     return render(request,'handu Group.html',context=data)
 
 
+def generate_token():
+
+    token =str(time.time())+ str(random.random())
+    md5 = hashlib.md5()
+    md5.update(token.encode('utf-8'))
+
+    return md5.hexdigest()
+
+
+def generate_password(password):
+    sha = hashlib.sha256()
+    sha.update(password.encode('utf-8'))
+    return sha.hexdigest()
+
+
 def register(request):
     if request.method == 'GET':
 
@@ -38,13 +68,23 @@ def register(request):
         # print(request.POST)
         user = User()
         user.username = request.POST.get('username')
-        user.password = request.POST.get('password')
+
+
+        user.password = generate_password(request.POST.get('password'))
+
+
+        user.token = generate_token()
+
+
         user.save()
 
+
         response = redirect('handuapp:handugroup')
-        response.set_cookie('username',user.username)
+        # response = redirect('handuapp:handugroup')
+        # response.set_cookie('username',user.username)
 
-
+        # request.session['username'] = user.username
+        request.session['token'] = user.token
         return response
 
 
@@ -54,12 +94,24 @@ def lander(request):
     elif request.method == 'POST':
 
         username = request.POST.get('username')
-        password = request.POST.get('password')
+        password = generate_password(request.POST.get('password'))
 
         users = User.objects.filter(username=username).filter(password=password)
         if users.count():
            response = redirect('handuapp:handugroup')
-           response.set_cookie('username',username)
+           # response.set_cookie('username',username)
+
+           # request.session['username'] = username
+           # request.session.set_expiry(0)
+
+           user = users.first()
+           user.token = generate_token()
+           user.save()
+           request.session['token'] = user.token
+           request.session.set_expiry(0)
+
+
+
            return response
         else:
 
@@ -82,5 +134,11 @@ def details(request,listid):
 def logout(request):
 
     response = redirect('handuapp:handugroup')
-    response.delete_cookie('username')
+    # response.delete_cookie('username')
+
+    # response.delete_cookie('sessionid')
+    # del request.session['username']
+
+    request.session.flush()
+
     return response

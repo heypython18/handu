@@ -78,9 +78,9 @@ WSGI_APPLICATION = 'handu.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'hddb',
+        'NAME': 'handudb',
         'USER':'root',
-        'PASSWORD':'wubifei1107',
+        'PASSWORD':'wu1107',
         'HOST':'127.0.0.1',
         'PORT':'3306',
     }
@@ -128,3 +128,9 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR,'static')
 ]
+
+# django-redis-sessions配置
+SESSION_ENGINE = 'redis_sessions.session'
+SESSION_REDIS_HOST = '127.0.0.1'
+SESSION_REDIS_PORT = 6379
+SESSION_REDIS_DB = 0
