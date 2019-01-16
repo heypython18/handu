@@ -76,6 +76,10 @@ $(function(){
    })
 //商品详情
    	$(function(){
+
+
+
+
    		//商品加操作
 		$('.goods-count .add').click(function () {
 			console.log('加操作')
@@ -95,8 +99,8 @@ $(function(){
 				console.log(response)
 				if (response.status == 0) {
 					window.open('/lander/',target='_self')
-				}else {
-
+				}else if (response.status == 1) {	//加操作成功
+					$('.goods-count .val').val(response.number)
 				}
 			})
 		})
@@ -104,6 +108,16 @@ $(function(){
 		//商品减操作
 		$('.goods-count .reduce').click(function () {
 			console.log('减操作')
+
+			var goodsid = $(this).attr('goodsid')
+
+			data = {
+				'goodsid':goodsid
+			}
+			$.get('/subcart/',data,function (response) {
+				console.log(response)
+			})
+
 		})
 
 				

@@ -127,9 +127,10 @@ def details(request,listid):
     token = request.session.get('token')
     users = User.objects.filter(token=token)
 
+
     if users.count():
         user = users.first()
-        username = user.username
+        username = int(user.username)
 
     else:
         username = None
@@ -139,7 +140,7 @@ def details(request,listid):
 
     data = {
         'list': list,
-        'username':username
+        'username':username,
     }
 
 
@@ -176,7 +177,7 @@ def addcart(request):
         carts = Cart.objects.filter(user=user).filter(list1=goods)
         if carts.exists():
             cart = carts.first()
-            cart.numeber = cart.number + 1
+            cart.number = cart.number + 1
             cart.save()
         else:
             cart = Cart()
@@ -184,9 +185,28 @@ def addcart(request):
             cart.list1= goods
             cart.number = 1
             cart.save()
-            return JsonResponse({'msg':'{}添加购物车成功!'.format(goods.name),'status':1,'number':cart.number})
+        return JsonResponse({'msg':'{}添加购物车成功!'.format(goods.name),'status':1,'number':cart.number})
     else:   #跳转到登录
 
         #ajax 用于数据传输
         #服务端不能使用重定向
         return JsonResponse({'msg':'请登录后操作','status':0})
+
+def subcart(request):
+    token = request.session.get('token')
+    user = User.objects.get(token=token)
+    goodsid = request.GET.get('goodsid')
+    goods = List.objects.get(pk=goodsid)
+
+
+    cart = Cart.objects.filter(user=user).filter(list1=goods).first()
+
+    cart.number = cart.number - 1
+    cart.save()
+
+    responseData = {
+        'msg':'{}-商品删减成功'.format(goods.name),
+        'status':1,
+        'number':cart.number
+    }
+    return JsonResponse(responseData)
