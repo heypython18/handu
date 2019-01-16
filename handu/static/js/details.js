@@ -76,6 +76,36 @@ $(function(){
    })
 //商品详情
    	$(function(){
+   		//商品加操作
+		$('.goods-count .add').click(function () {
+			console.log('加操作')
+
+			//加入购物车：谁、商品、加入购物车
+			//用户？ 状态保持（必须登录）
+			//商品？ 商品ID，添加一个自定义属性
+			var goodsid = $(this).attr('goodsid')
+
+			console.log(goodsid)
+
+
+			data = {
+				'goodsid':goodsid,
+			}
+			$.get('/addcart/',data,function (response) {
+				console.log(response)
+				if (response.status == 0) {
+					window.open('/lander/',target='_self')
+				}else {
+
+				}
+			})
+		})
+
+		//商品减操作
+		$('.goods-count .reduce').click(function () {
+			console.log('减操作')
+		})
+
 				
 		//获取从首页传过来的id
 		// location.search : 参数部门， 如:?id=1002&name=lisi

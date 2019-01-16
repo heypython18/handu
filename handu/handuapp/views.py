@@ -2,11 +2,11 @@ import hashlib
 import random
 import time
 
-from django.http import HttpResponse
+from django.http import HttpResponse, JsonResponse
 from django.shortcuts import render, redirect
 
 # Create your views here.
-from handuapp.models import HeadImg, List5, Hot, List2, List3, List4, List, User
+from handuapp.models import HeadImg, List5, Hot, List2, List3, List4, List, User, Cart
 
 
 def index(request):
@@ -124,11 +124,26 @@ def cart(request):
 
 
 def details(request,listid):
+    token = request.session.get('token')
+    users = User.objects.filter(token=token)
+
+    if users.count():
+        user = users.first()
+        username = user.username
+
+    else:
+        username = None
+
 
     list = List.objects.get(id=listid)
 
+    data = {
+        'list': list,
+        'username':username
+    }
 
-    return render(request,'details.html',{'list':list})
+
+    return render(request,'details.html',data)
 
 
 def logout(request):
@@ -142,3 +157,36 @@ def logout(request):
     request.session.flush()
 
     return response
+
+
+def addcart(request):
+    token = request.session.get('token')
+
+    if token: #加操作
+        user = User.objects.get(token=token)
+        goodsid = request.GET.get('goodsid')
+        goods = List.objects.get(pk=goodsid)
+
+        #第一次操作：添加一条新记录
+        #后续操作：只需修改number
+
+
+
+        #判断该商品是否存在
+        carts = Cart.objects.filter(user=user).filter(list1=goods)
+        if carts.exists():
+            cart = carts.first()
+            cart.numeber = cart.number + 1
+            cart.save()
+        else:
+            cart = Cart()
+            cart.user = user
+            cart.list1= goods
+            cart.number = 1
+            cart.save()
+            return JsonResponse({'msg':'{}添加购物车成功!'.format(goods.name),'status':1,'number':cart.number})
+    else:   #跳转到登录
+
+        #ajax 用于数据传输
+        #服务端不能使用重定向
+        return JsonResponse({'msg':'请登录后操作','status':0})

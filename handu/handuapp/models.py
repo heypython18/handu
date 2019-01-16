@@ -61,4 +61,17 @@ class User(models.Model):
     token = models.CharField(max_length=255)
 
 
+class Cart(models.Model):
+    #额外信息（颜色，型号，购买数量）
+
+    #用户
+    user = models.ForeignKey(User)
+
+    #商品信息
+    list1 = models.ForeignKey(List)
+    #商品数量
+    number = models.IntegerField()
+    #是否选中
+    isselect = models.BooleanField(default=True)
+
 
