@@ -21,7 +21,7 @@
 				<p>您好，欢迎光临韩都衣舍！</p>
 				<ul>
 					<li><a href="#">积分0</a></li>
-					<li><a href="#">退出</a></li>
+					<li><a href="{% url 'handuapp:logout' %}">退出</a></li>
 					<li><a href="#">我的韩都</a><b></b></li>
 					<li><a href="#">购物车</a></li>
 					<li><a href="#">在线客服</a></li>
@@ -62,12 +62,13 @@
 			</div>
 			<div class="cartlist">
 				<ul id="list">
-					<li>
+					{% for cart in carts %}
+					    <li>
 						<div class="product">
 							<div class="productimg">
-								<img src="/static/images/HN1.jpg" />
+								<img src="{{ cart.list1.headimg }}" />
 							</div>
-							<p><a href="#">韩都衣舍男装2017秋季新款韩版水洗九分牛仔裤男士AF7785渪偞0901</a></p>
+							<p><a href="#">{{ cart.list1.name }}</a></p>
 							<span>颜色:蓝色    尺码:L</span>
 						</div>
 						<div class="product-money">
@@ -77,10 +78,10 @@
 							</div>
 						</div>
 						<div class="product-number">
-							<input class="reduce" type="button" value="-"/>
-							<input class="carttxt" type="button" value="1" />
-							<input class="add" type="button" value="+" />
- 							
+							<input class="reduce" type="button" value="-" goodsid="{{ cart.id }}"/>
+							<input class="carttxt" type="button" value="{{ cart.number }}" />
+							<input class="add" type="button" value="+" goodsid="{{ cart.id }}"/>
+
 						</div>
 						<div class="product-singlemoney">
 							<span>￥450.00</span>
@@ -95,6 +96,8 @@
 							<a href="#">2017秋冬新品-全场满199包邮【提交订单系统自动满减】满199减20/满299减50/满499减150！~</a>
 						</div>
 					</li>
+					{% endfor %}
+
 				</ul>
 			</div>
 			<div class="total">

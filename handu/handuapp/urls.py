@@ -4,6 +4,7 @@ from handuapp import views
 
 urlpatterns = [
     url(r'^addcart/$',views.addcart,name='addcart'),
+    url(r'^subcart/$',views.subcart,name='subcart'),
 
     url(r'^$',views.index,name='handugroup'),
     url(r'^register/$',views.register,name='register'),

@@ -3,8 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="da0bfa6d-2792-440b-bc8a-5eef8df86239" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/handuapp/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/handuapp/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/handuapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/handuapp/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/cart.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/js/details.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/details.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/cart.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/details.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/details.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -51,8 +54,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/handuapp/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="201" column="69" selection-start-line="201" selection-start-column="69" selection-end-line="201" selection-end-column="69" />
+            <state relative-caret-position="150">
+              <caret line="124" column="63" selection-start-line="124" selection-start-column="63" selection-end-line="124" selection-end-column="63" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
               </folding>
@@ -61,15 +64,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/js/details.js">
+        <entry file="file://$PROJECT_DIR$/static/css/index/cart.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="117" column="36" selection-start-line="117" selection-start-column="36" selection-end-line="117" selection-end-column="36" />
-              <folding>
-                <element signature="e#25#180#0" />
-                <element signature="e#207#499#0" />
-                <element signature="e#521#1872#0" />
-              </folding>
+            <state relative-caret-position="180">
+              <caret line="12" column="26" lean-forward="true" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -77,8 +75,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/details.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="501" column="89" selection-start-line="501" selection-start-column="89" selection-end-line="501" selection-end-column="89" />
+            <state relative-caret-position="65">
+              <caret line="501" column="13" lean-forward="true" selection-start-line="501" selection-start-column="13" selection-end-line="501" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -86,8 +84,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/cart.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="66" column="52" lean-forward="true" selection-start-line="66" selection-start-column="52" selection-end-line="66" selection-end-column="52" />
+            <state relative-caret-position="254">
+              <caret line="83" lean-forward="true" selection-start-line="83" selection-end-line="83" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/js/details.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="83" column="24" lean-forward="true" selection-start-line="83" selection-start-column="24" selection-end-line="83" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/js/cart.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="22" column="49" selection-start-line="22" selection-start-column="49" selection-end-line="22" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -102,8 +118,6 @@
       <find>热销</find>
       <find>106</find>
       <find>con4</find>
-      <find>con3-b</find>
-      <find>con3</find>
       <find>top-l</find>
       <find>small</find>
       <find>使用邮箱</find>
@@ -116,6 +130,10 @@
       <find>box</find>
       <find>加入购物车</find>
       <find>add</find>
+      <find>val</find>
+      <find>con3</find>
+      <find>con3-b</find>
+      <find>json</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -136,18 +154,19 @@
         <option value="$PROJECT_DIR$/static/css/index/details.css" />
         <option value="$PROJECT_DIR$/static/css/index/register.css" />
         <option value="$PROJECT_DIR$/static/css/index/index.css" />
-        <option value="$PROJECT_DIR$/static/js/index.js" />
         <option value="$PROJECT_DIR$/templates/register.html" />
         <option value="$PROJECT_DIR$/templates/lander.html" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/85f212a8-b415-4500-8c45-74c73838bd5d/console_1.sql" />
         <option value="$PROJECT_DIR$/handu/settings.py" />
         <option value="$PROJECT_DIR$/templates/handu Group.html" />
-        <option value="$PROJECT_DIR$/templates/cart.html" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
         <option value="$PROJECT_DIR$/handuapp/models.py" />
         <option value="$PROJECT_DIR$/handuapp/urls.py" />
-        <option value="$PROJECT_DIR$/templates/details.html" />
         <option value="$PROJECT_DIR$/static/js/details.js" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
+        <option value="$PROJECT_DIR$/static/js/index.js" />
+        <option value="$PROJECT_DIR$/templates/details.html" />
+        <option value="$PROJECT_DIR$/templates/cart.html" />
+        <option value="$PROJECT_DIR$/static/js/cart.js" />
         <option value="$PROJECT_DIR$/handuapp/views.py" />
       </list>
     </option>
@@ -181,8 +200,7 @@
             <path>
               <item name="handu" type="b2602c69:ProjectViewProjectNode" />
               <item name="handu" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -198,7 +216,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -258,12 +276,12 @@
       <workItem from="1547472127372" duration="2297000" />
       <workItem from="1547547785108" duration="13535000" />
       <workItem from="1547600872240" duration="16473000" />
-      <workItem from="1547641991882" duration="5434000" />
+      <workItem from="1547641991882" duration="26421000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="104325000" />
+    <option name="totallyTimeSpent" value="125312000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -275,10 +293,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="45" y="25" width="795" height="575" extended-state="6" />
+    <frame x="45" y="25" width="1321" height="743" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.19971469" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16889238" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -292,14 +310,14 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50196385" side_tool="true" weight="0.14355628" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49803615" visible="true" weight="0.20224719" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49803615" visible="true" weight="0.11582382" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32789558" />
       <window_info anchor="bottom" id="Database Console" order="13" weight="0.16639479" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" />
-      <window_info anchor="right" id="Database" order="4" weight="0.26105565" />
+      <window_info anchor="right" id="Database" order="4" weight="0.29300866" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -355,13 +373,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="68" column="15" lean-forward="true" selection-start-line="68" selection-start-column="15" selection-end-line="68" selection-end-column="15" />
         </state>
       </provider>
     </entry>
@@ -483,13 +494,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/index/details.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="342" column="1" selection-start-line="342" selection-start-column="1" selection-end-line="342" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/js/register.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -516,48 +520,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="das://85f212a8-b415-4500-8c45-74c73838bd5d/schema/handudb/table/handuapp_cart.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/handuapp/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-69">
-          <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+        <state relative-caret-position="120">
+          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/handu Group.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1965">
-          <caret line="22" column="26" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://85f212a8-b415-4500-8c45-74c73838bd5d/schema/handudb/table/handuapp_list">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/handuapp/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
+        <state relative-caret-position="165">
           <caret line="70" column="35" lean-forward="true" selection-start-line="70" selection-start-column="35" selection-end-line="70" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/cart.html">
+    <entry file="file://$PROJECT_DIR$/static/css/index/details.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="66" column="52" lean-forward="true" selection-start-line="66" selection-start-column="52" selection-end-line="66" selection-end-column="52" />
+        <state relative-caret-position="174">
+          <caret line="472" column="7" selection-start-line="472" selection-start-column="7" selection-end-line="472" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="das://85f212a8-b415-4500-8c45-74c73838bd5d/schema/handudb/table/handuapp_cart.sql">
+    <entry file="file://$PROJECT_DIR$/static/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+        <state relative-caret-position="59">
+          <caret line="188" column="30" lean-forward="true" selection-start-line="188" selection-start-column="30" selection-end-line="188" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -568,36 +565,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/details.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="501" column="89" selection-start-line="501" selection-start-column="89" selection-end-line="501" selection-end-column="89" />
+    <entry file="das://85f212a8-b415-4500-8c45-74c73838bd5d/schema/handudb/table/handuapp_list">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/cart.js">
+    <entry file="file://$PROJECT_DIR$/static/css/index/cart.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="13" lean-forward="true" selection-start-column="13" selection-end-column="13" />
+        <state relative-caret-position="180">
+          <caret line="12" column="26" lean-forward="true" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/handu Group.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="729" column="30" selection-start-line="729" selection-start-column="24" selection-end-line="729" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/details.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="65">
+          <caret line="501" column="13" lean-forward="true" selection-start-line="501" selection-start-column="13" selection-end-line="501" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/cart.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="83" lean-forward="true" selection-start-line="83" selection-end-line="83" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/js/details.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="117" column="36" selection-start-line="117" selection-start-column="36" selection-end-line="117" selection-end-column="36" />
-          <folding>
-            <element signature="e#25#180#0" />
-            <element signature="e#207#499#0" />
-            <element signature="e#521#1872#0" />
-          </folding>
+        <state relative-caret-position="210">
+          <caret line="83" column="24" lean-forward="true" selection-start-line="83" selection-start-column="24" selection-end-line="83" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/cart.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="49" selection-start-line="22" selection-start-column="49" selection-end-line="22" selection-end-column="49" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/handuapp/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="201" column="69" selection-start-line="201" selection-start-column="69" selection-end-line="201" selection-end-column="69" />
+        <state relative-caret-position="150">
+          <caret line="124" column="63" selection-start-line="124" selection-start-column="63" selection-end-line="124" selection-end-column="63" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
           </folding>

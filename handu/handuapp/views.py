@@ -119,8 +119,17 @@ def lander(request):
 
 
 def cart(request):
+    token = request.session.get('token')
+    if token:
+        user = User.objects.get(token=token)
+        carts = Cart.objects.filter(user=user).exclude(number=0)
 
-    return render(request,'cart.html')
+        data = {
+            'carts':carts
+        }
+        return render(request,'cart.html',context=data)
+    else:
+        return redirect('handuapp:lander')
 
 
 def details(request,listid):
@@ -135,12 +144,22 @@ def details(request,listid):
     else:
         username = None
 
+    token = request.session.get("token")
+    carts ={}
+    if token:
+        user = User.objects.get(token=token)
+        carts = Cart.objects.filter(user=user).first()
+
+
+
+
 
     list = List.objects.get(id=listid)
 
     data = {
         'list': list,
         'username':username,
+        'carts':carts,
     }
 
 
@@ -192,7 +211,7 @@ def addcart(request):
         #服务端不能使用重定向
         return JsonResponse({'msg':'请登录后操作','status':0})
 
-def subcart(request):
+def subcart(request): #减操作
     token = request.session.get('token')
     user = User.objects.get(token=token)
     goodsid = request.GET.get('goodsid')
@@ -201,7 +220,7 @@ def subcart(request):
 
     cart = Cart.objects.filter(user=user).filter(list1=goods).first()
 
-    cart.number = cart.number - 1
+    cart.number = cart.number -1
     cart.save()
 
     responseData = {

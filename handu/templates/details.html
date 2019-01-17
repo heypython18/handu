@@ -500,7 +500,10 @@
                     <div class="goods-count">
                         <span class="label3">数&nbsp;&nbsp;&nbsp;&nbsp;量</span>
                         <input type="button" value="-" class="reduce" goodsid="{{ list.id }}">
-                        <input type="text" value="0" class="val">
+
+                        <input type="text" value="{{ carts.number }}" class="val">
+
+
                         <input type="button" value="+" class="add" goodsid="{{ list.id }}">
                     </div>
                     <div class="addcart">
