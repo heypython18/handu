@@ -102,15 +102,16 @@ $(function(){
             'isall':isall
         }
 
+
         $.get('/changecartall/',data,function (response) {
             console.log(response)
             if (response.status == 1){
                 $('.cartlist #list .confirm-wrapper').each(function () {
                     if (isall){
-                        $(this).find('input').attr("checkbox",true)
+                       $('.confirm-wrapper').prop("checked",true)
 
                     }else {
-                        $(this).find('input').attr("checkbox",true)
+                        $('.confirm-wrapper').prop("checked",false)
                     }
                 })
             }
