@@ -19,5 +19,11 @@ urlpatterns = [
     url(r'^details/(\d+)/$',views.details,name='details'),
 
     #退出
-    url(r'logout/$',views.logout,name= 'logout'),
+    url(r'^logout/$',views.logout,name= 'logout'),
+
+    #修改购物车选中状态
+    url(r'^changecartstatus/$',views.changecartstatus,name='changecartstatus'),
+
+    #是否全选
+    url(r'^changecartall/$',views.changecartall,name='changecartall'),
 ]

@@ -501,7 +501,14 @@
                         <span class="label3">数&nbsp;&nbsp;&nbsp;&nbsp;量</span>
                         <input type="button" value="-" class="reduce" goodsid="{{ list.id }}">
 
-                        <input type="text" value="{{ carts.number }}" class="val">
+                        <span class="val">
+                            {% for cart in carts %}
+                                {% if cart.list1.id == list.id %}
+                                    {{ cart.number }}
+                                {% endif %}
+                            {% endfor %}
+
+                        </span>
 
 
                         <input type="button" value="+" class="add" goodsid="{{ list.id }}">

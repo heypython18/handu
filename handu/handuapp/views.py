@@ -144,11 +144,12 @@ def details(request,listid):
     else:
         username = None
 
+    #获取购物车信息
     token = request.session.get("token")
-    carts ={}
+    carts =[]
     if token:
         user = User.objects.get(token=token)
-        carts = Cart.objects.filter(user=user).first()
+        carts = Cart.objects.filter(user=user)
 
 
 
@@ -229,3 +230,39 @@ def subcart(request): #减操作
         'number':cart.number
     }
     return JsonResponse(responseData)
+
+
+def changecartstatus(request):
+    cartid = request.GET.get('cartid')
+    cart = Cart.objects.get(pk=cartid)
+    cart.isselect = not cart.isselect
+    cart.save()
+
+    data = {
+        'msg':'状态修改成功',
+        'status':1,
+        'isselect':cart.isselect
+    }
+    return JsonResponse(data)
+
+
+def changecartall(request):
+    token = request.session.get('token')
+    user = User.objects.get(token=token)
+
+
+    isall = request.GET.get('isall')
+
+    if isall == 'true':
+        isall = True
+    else:
+        isall = False
+    print(isall)
+    carts = Cart.objects.filter(user=user).update(isselect = isall)
+
+    data = {
+        'msg': '状态修改成功',
+        'status': 1,
+
+    }
+    return JsonResponse(data)

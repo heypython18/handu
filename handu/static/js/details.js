@@ -74,7 +74,21 @@ $(function () {
 })
 //商品详情
 $(function () {
+    //默认减号 数字隐藏【存在问题】
+    // $('.goods-count .reduce').hide()
+    // $('.goods-count .val').hide()
 
+    //如果number是有值的，表示已经添加在购物车 【减号和数字就显示】
+    $('.goods-count .val').each(function () {
+        var num = parseInt($(this).html())
+        if (num){
+            $(this).prev().show()
+            $(this).show()
+        }else {
+            $(this).prev().hide()
+            $(this).hide()
+        }
+    })
 
     //商品加操作
     $('.goods-count .add').click(function () {
@@ -85,9 +99,9 @@ $(function () {
         //商品？ 商品ID，添加一个自定义属性
         var goodsid = $(this).attr('goodsid')
 
-        console.log(goodsid)
+        // console.log(goodsid)
 
-
+        var $that = $(this)
         data = {
             'goodsid': goodsid,
         }
@@ -96,7 +110,8 @@ $(function () {
             if (response.status == 0) {
                 window.open('/lander/', target = '_self')
             } else if (response.status == 1) {	//加操作成功
-                $('.goods-count .val').val(response.number)
+                $that.prev().show().html(response.number)
+                $that.prev().prev().show()
             }
         })
     })
@@ -115,10 +130,11 @@ $(function () {
             console.log(response)
             if (response.status == 1) {
                 if (response.number > 0) {
-                    $that.next().val(response.number)
+                    $that.next().html(response.number)
 
                 } else {
-                    $that.next().val(response.number)
+                    $that.next().hide()
+                    $that.hide()
 
                 }
             }

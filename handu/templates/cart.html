@@ -63,6 +63,11 @@
 			<div class="cartlist">
 				<ul id="list">
 					{% for cart in carts %}
+                        {% if cart.isselect %}
+                            <input type="checkbox" class="confirm-wrapper" goodsid="{{ cart.id }}" checked="checked">
+                        {% else %}
+                            <input type="checkbox" class="confirm-wrapper" goodsid="{{ cart.id }}" >
+                        {% endif %}
 					    <li>
 						<div class="product">
 							<div class="productimg">
@@ -74,27 +79,27 @@
 						<div class="product-money">
 							<div class="product-m">
 								<dis>￥654</dis><br />
-								<span>￥128</span>
+								<span>￥{{ cart.list1.price }}</span>
 							</div>
 						</div>
 						<div class="product-number">
-							<input class="reduce" type="button" value="-" goodsid="{{ cart.id }}"/>
+							<input class="reduce" type="button" value="-" goodsid="{{ cart.list1.id }}"/>
 							<input class="carttxt" type="button" value="{{ cart.number }}" />
-							<input class="add" type="button" value="+" goodsid="{{ cart.id }}"/>
+							<input class="add" type="button" value="+" goodsid="{{ cart.list1.id }}"/>
 
 						</div>
 						<div class="product-singlemoney">
 							<span>￥450.00</span>
 						</div>
-						<div class="product-close">
-							<div class="product-closemid">
-								<a href="#">移入收藏夹</a><br />
-								<a href="#" class="del">删除</a>
-							</div>
-						</div>
-						<div class="product-tip">
-							<a href="#">2017秋冬新品-全场满199包邮【提交订单系统自动满减】满199减20/满299减50/满499减150！~</a>
-						</div>
+{#						<div class="product-close">#}
+{#							<div class="product-closemid">#}
+{#								<a href="#">移入收藏夹</a><br />#}
+{#								<a href="#" class="del">删除</a>#}
+{#							</div>#}
+{#						</div>#}
+{#						<div class="product-tip">#}
+{#							<a href="#">2017秋冬新品-全场满199包邮【提交订单系统自动满减】满199减20/满299减50/满499减150！~</a>#}
+{#						</div>#}
 					</li>
 					{% endfor %}
 
@@ -102,21 +107,22 @@
 			</div>
 			<div class="total">
 				<table>
-					<tr>
-						<td>总计：</td>
-						<td class="totalval">0</td>
-					</tr>
-					<tr>
-						<td>满立减：</td>
-						<td>￥-150.00</td>
-					</tr>
-					<tr>
-						<td>税额：</td>
-						<td>￥-0.00</td>
-					</tr>
+{#					<tr>#}
+{#						<td>总计：</td>#}
+{#						<td class="totalval">0</td>#}
+{#					</tr>#}
+{#					<tr>#}
+{#						<td>满立减：</td>#}
+{#						<td>￥-150.00</td>#}
+{#					</tr>#}
+{#					<tr>#}
+{#						<td>税额：</td>#}
+{#						<td>￥-0.00</td>#}
+{#					</tr>#}
 				</table>
 			</div>
 			<div class="total2">
+                全选：<input type="checkbox" class="all" goodsid="{{ cart.id }}" checked="checked">
 				<div class="total2-r">
 					<span>购物金额总计:</span><i>￥0</i>
 				</div>
