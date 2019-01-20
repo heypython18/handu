@@ -60,7 +60,7 @@ class User(models.Model):
     password = models.CharField(max_length=255)
     token = models.CharField(max_length=255)
 
-
+#购物车
 class Cart(models.Model):
     #额外信息（颜色，型号，购买数量）
 
@@ -74,4 +74,19 @@ class Cart(models.Model):
     #是否选中
     isselect = models.BooleanField(default=True)
 
+#订单
+#一个用户对应多个订单
+class Order(models.Model):
+    user = models.ForeignKey(User)
+    status = models.IntegerField(default=0)
+    createtime = models.DateField(auto_now_add=True)
+    identifier = models.CharField(max_length=256)
 
+
+#订单商品类
+class OrderGoods(models.Model):
+    order = models.ForeignKey(Order)
+
+    goods = models.ForeignKey(List)
+
+    number = models.IntegerField()

@@ -4,11 +4,11 @@
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
-		<link rel="stylesheet" type="text/css" href="{% static 'css/index/cart.css' %}"/>
+		<link rel="stylesheet" type="text/css" href="{% static 'css/index/oderdetail.css' %}"/>
 		<link rel="stylesheet" type="text/css" href="{% static 'css/reset.css' %}"/>
 		<script src ="{% static 'js/jquery-1.12.3.js' %}"></script>
 		<script src ="{% static 'js/move.js' %}"></script>
-		<script src="{% static 'js/cart.js' %}"></script>
+		<script src="{% static 'js/oderdetail.js' %}"></script>
 		<script src="{% static 'js/jquery.cookie.js' %}"></script>
 	</head>
 	<body>
@@ -62,34 +62,35 @@
 			</div>
 			<div class="cartlist">
 				<ul id="list">
-					{% for cart in carts %}
-                        {% if cart.isselect %}
-                            <input type="checkbox" class="confirm-wrapper" goodsid="{{ cart.id }}" checked="checked">
-                        {% else %}
-                            <input type="checkbox" class="confirm-wrapper" goodsid="{{ cart.id }}" >
-                        {% endif %}
-					    <li>
+					{% for orderGoods in order.ordergoods_set.all %}
+{#                        {% if cart.isselect %}#}
+{#                            <input type="checkbox" class="confirm-wrapper" goodsid="{{ cart.id }}" checked="checked">#}
+{#                        {% else %}#}
+{#                            <input type="checkbox" class="confirm-wrapper" goodsid="{{ cart.id }}" >#}
+{#                        {% endif %}#}
+					    <li class="goods">
+                        <div>订单编号：{{ order.identifier }}</div>
 						<div class="product">
 							<div class="productimg">
-								<img src="{{ cart.list1.headimg }}" />
+								<img src="{{ orderGoods.goods.midimg }}" />
 							</div>
-							<p><a href="#">{{ cart.list1.name }}</a></p>
+							<p><a href="#">{{ orderGoods.goods.name }}</a></p>
 							<span>颜色:蓝色    尺码:L</span>
 						</div>
 						<div class="product-money">
 							<div class="product-m">
 								<dis>￥654</dis><br />
-								<span>￥{{ cart.list1.price }}</span>
+								<span>￥{{ orderGoods.goods.price}}</span>
 							</div>
 						</div>
 						<div class="product-number">
-							<input class="reduce" type="button" value="-" goodsid="{{ cart.list1.id }}"/>
-							<input class="carttxt" type="button" value="{{ cart.number }}" />
-							<input class="add" type="button" value="+" goodsid="{{ cart.list1.id }}"/>
+{#							<input class="reduce" type="button" value="-" goodsid="{{ cart.list1.id }}"/>#}
+							<input class="carttxt" type="button" value="{{ orderGoods.number }}" />
+{#							<input class="add" type="button" value="+" goodsid="{{ cart.list1.id }}"/>#}
 
 						</div>
 						<div class="product-singlemoney">
-{#							<span>￥450.00</span>#}
+							<span>￥{{ cart.list1.price }}*{{ cart.number }}</span>
 						</div>
 {#						<div class="product-close">#}
 {#							<div class="product-closemid">#}
@@ -122,14 +123,14 @@
 				</table>
 			</div>
 			<div class="total2">
-                全选：<input type="checkbox" class="all" isall="true" checked="checked">
+{#                全选：<input type="checkbox" class="all" isall="true" checked="checked">#}
 				<div class="total2-r">
 					<span>购物金额总计:</span><i>￥0</i>
 				</div>
 			</div>
 			<div class="goshopping">
 				<input class="goshopping-l" type="button" value="继续购物"/>
-                <input class="goshopping-r" type="button" value="去下单"/>
+                <input class="goshopping-r" type="button" value="去支付" identifier="{{ order.identifier }}"/>
 			</div>
 			<div class="collect">
 				<p>韩都官网为你推荐</p>

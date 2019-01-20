@@ -120,13 +120,15 @@ $(function(){
 
 
 
-	    $('.goshopping-r').click(function () {
-	        console.log('aaa')
-        $.get('/generateorder/', function (response) {
-            console.log('bbb')
+         $('.goshopping-r').click(function () {
+        var identifier = $(this).attr('identifier')
+        data = {
+            'identifier':identifier
+        }
+        $.get('/pay/', data, function (response) {
             console.log(response)
-            if (response.status == 1){  // 订单详情页
-                window.open('/orderdetail/' + response.identifier + '/', target='_self')
+            if (response.status == 1){
+                window.open(response.alipayurl, target='_self')
             }
         })
     })
