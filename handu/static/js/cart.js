@@ -122,12 +122,12 @@ $(function(){
 
 	    $('.goshopping-r').click(function () {
 	        console.log('aaa')
-        $.get('/generateorder/', function (response) {
-            console.log('bbb')
-            console.log(response)
-            if (response.status == 1){  // 订单详情页
-                window.open('/orderdetail/' + response.identifier + '/', target='_self')
-            }
-        })
+            $.get('/generateorder/', function (response) {
+                console.log('bbb')
+                console.log(response)
+                if (response.status == 1){  // 订单详情页
+                    window.open('http://47.112.30.100/orderdetail/' + response.identifier + '/', target='_self')
+                }
+            })
     })
 })

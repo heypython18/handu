@@ -279,9 +279,7 @@ def generate_identifire():
 
 def generateorder(request):
     token = request.session.get('token')
-    print(token)
     user = User.objects.get(token=token)
-    print(user)
     # 订单
     order = Order()
     order.user = user
@@ -346,7 +344,7 @@ def appnotify(request):
 
 def returnview(request):
 
-    return redirect('axf:mine')
+    return redirect('handuapp:handugroup')
 
 
 def pay(request):
@@ -362,7 +360,7 @@ def pay(request):
         subject='MacBookPro - 2019款',  # 支付宝页面显示的标题
         out_trade_no=identifier,  # AXF订单编号
         total_amount=str(sum),  # 订单金额
-        return_url='http://112.74.55.3/axf/returnview/'
+        return_url='http://47.112.30.100'
     )
 
     # 拼接上支付网关
